@@ -1,1 +1,86 @@
-# Class 폴더
+# 박상욱 (Park Sang Wook)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="48" ></a>
+
+
+# - Content
+
+- About Me
+
+- IOS School
+
+- Study
+
+- Contact Information
+
+<br><br>
+
+## 1. About Me
+
+>-
+
+<br>
+
+## 2. iOS School 🍎
+
+- **[1 week]**
+
+>-
+<br>
+
+- **[2 week]**
+
+>-
+
+- **[3 week]**
+
+>-
+
+- **[4 week]**
+
+>-
+
+- **[5 week]**
+
+>-
+
+- **[6 week]**
+
+>-
+
+- **[7 week]**
+
+>-
+
+- **[8 week]**
+
+>-
+
+- **[9 week]**
+
+>-
+
+- **[10 week]**
+
+>-
+
+- **[11 week]**
+
+>-
+
+- **[12 week]**
+
+>-
+
+
+<br><br>
+
+## 3. Study
+
+
+
+<br><br>
+
+## 4. Contact Information
+
+> - E-mail : wkahdla12346@gmail.com
+>
+> - Phone : 010-22249-1665
