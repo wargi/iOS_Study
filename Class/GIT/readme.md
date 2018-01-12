@@ -1,7 +1,7 @@
-#2018.01.11
+# 2018.01.11 #
 ![](http://ncc.phinf.naver.net/20151214_80/1450075067578A3Saj_JPEG/1.jpg?type=w646)
 <br>
-##- Git
+## - Git ##
 >- 소스 저장소로 빠른 수행 속도에 중점을 두고 있는 것이 특징<br>
 >- 2005년에 개발된 분산버전 관리시스템<br>
 >- Git의 작업 폴더는 모두, 전체 기록과 기록을 추적할 수 있는 정보를 포함하고 있다.
@@ -35,5 +35,5 @@
 - Remote Repository -> Working Directory : Pull
 
 <br>
-## Git 명령어 및 브랜치 연습사이트
+## Git 명령어 및 브랜치 연습사이트##
 * <http://pcottle.github.io/learnGitBranching/>
