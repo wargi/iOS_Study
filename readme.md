@@ -1,5 +1,3 @@
-# 박상욱 (Park Sang Wook)<a href="url"><img src="Study/Image/apple-logo.png" align="right" height="48" ></a>
-
 
 # - Content
 
@@ -24,7 +22,6 @@
 - **[1 week]**
 
 >-
-<br>
 
 - **[2 week]**
 
