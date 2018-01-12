@@ -21,7 +21,7 @@
 
 - **[1 week]**
 
->-
+>- [Git](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/GIT/readme.md)
 
 - **[2 week]**
 
