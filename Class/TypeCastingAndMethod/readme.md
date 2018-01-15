@@ -1,12 +1,10 @@
 # 2017.01.15 #
 
-## 형변환 / 함수사용 ##
+## 1. 형변환 ##
 
-### 1. 형변환 ###
+## 2. 여러가지 함수의 사용법 ##
 
-### 2. 여러가지 함수의 사용법 ###
-
-#### 1) Argument Name and Parameter Names ####
+### 1) Argument Name and Parameter Names ###
 - 인수명은 함수 호출시 사용 되는 이름. (Argument-아규먼트)<br>
 - 매개변수는 함수 내부에서 사용 되는 변수명.(Parameter-파라메터)<br>
 - 인수명은 생략가능하며, 생략하면 매개변수명이 인수명로 사용된다.<br>
@@ -36,7 +34,7 @@ func methodName(_ parameterName : Any) -> Any
 methodName(argumentName: 10)
 ~~~
 
-#### 2) Default Parameter Values ####
+### 2) Default Parameter Values ###
 - 매개변수(파라미터) 기본값을 설정할 수 있다.<br>
 - 매개변수(파라미터) 값이 들어오지 않을때 기본값이 사용된다.<br>
 
@@ -58,7 +56,7 @@ number(num1: 10, num2: 5)
 
 ~~~
 
-#### 3) In-Out Parameter Keyword ####
+### 3) In-Out Parameter Keyword ###
 - 파라미터는 상수값이다 왜냐하면 함수에서 이루어지는 행위는 가져온 인자값에 영향을 끼치지 않는다.<br>
 - 파라미터로 받아오는 인자 값을 변경해야 한다면 inout 키워드를 사용하여 
 inout매개변수로 지정 해야 한다.<br>
@@ -84,8 +82,8 @@ swapTwoInts(&3, &107)
 */
 ~~~
 
-### 4. 함수 반환과 여러가지 함수 및 예제 ###
-#### 1) 함수 반환 ####
+## 3. 함수 반환과 여러가지 함수 및 예제##
+### 1) 함수 반환 ###
 - 함수 실행 결과의 리턴 타입을 명시 해준다
 - return 키워드를 사용하여 함수 결과 반환
 - 반환 타입과 같은 타입의 데이터를 반환 해야 한다
@@ -107,7 +105,7 @@ func fName(agumentName paramName:Int) -> Int
 }
 ~~~
 
-#### 2) 여러가지 함수 예제 ####
+### 2) 여러가지 함수 예제 ###
 
 ~~~
 // 가져온 정수를 리턴 해주는 함수
@@ -177,5 +175,5 @@ func printName(explain str: inout String) -> String
 }
 ~~~
 
-### 3. 함수관련 실습 과제 ###
+## 4. 함수관련 실습 과제 ##
 - [완료한 과제확인하기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/ToolBox/ToolBox/ToolBox.swift)
