@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         let partMoney : Int = p1.MoneyCal(salary: p1.salary,hour: p1.hour)
         p1.printInfomation(timeMoney: partMoney)
         
+        print(Int.max);
         p1.Emotion()
         p1.Communication()
         p1.Walk()
