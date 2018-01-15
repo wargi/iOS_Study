@@ -70,7 +70,7 @@ func vName(_ parameter: Any) -> Any
 >~~~
 
 ## 5. 변수 값 지정 ##
-![변수값지정](/value.png "값")
+![변수값지정](value.png)
 
 ## 6. 다양한 형태의 변수 선언 ##
 ~~~
