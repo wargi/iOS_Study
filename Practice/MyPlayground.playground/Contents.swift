@@ -30,11 +30,14 @@ let PI : Double = 3.141592
 
 
 
+// 사각형의 가로, 세로 길이를 보내주고 넓이를 구해주는 함수
 func rectanglerArea(width : Int, depth : Int) -> Int
 {
     return width * depth
 }
 
+//정사각형의 넓이를 구하는 함수
+//결과가 사각형의 넓이를 구하는 연산과 같음으로 사각형의 넓이를 구해주는 함수로 값을 보내줘서 연산을 한다
 func squareArea(height : Int) -> Int
 {
     return rectanglerArea(width: height, depth: height)
@@ -96,7 +99,6 @@ func cone(r : Double, height : Int) -> Double
 }
 
 stringNum = Int(intNum)!
-
 resultValue = calculator(num: sampleTuple.height, num1: sampleTuple.weight)
 
 print(resultStr)
