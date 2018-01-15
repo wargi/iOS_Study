@@ -26,7 +26,7 @@
 
 - **[2 week]**
 
->-
+>- [변수와 함수](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/VariableAndMethod/readme.md)
 
 - **[3 week]**
 

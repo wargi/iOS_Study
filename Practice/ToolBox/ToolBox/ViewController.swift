@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let toolBox : ToolBoxClass = ToolBoxClass()
+        
+        let secondTime : Int = toolBox.secondChange(timeTemp: 11320)
+        print("\(secondTime)초")
+
     }
 
     override func didReceiveMemoryWarning() {
