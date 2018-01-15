@@ -40,30 +40,30 @@ func vName(_ parameter: Any) -> Any
 
 ## 4. 변수 타입 ##
 >- 정수형 : Int<br>
-
+>
 >~~~
 >var intName:Int
 >~~~
-
+>
 >- 실수형 : Double<br>
-
+>
 >~~~
 >var doubleName:Double
 >~~~
-
+>
 >- 문자형 : String<br>
-
+>
 >~~~
 >var stringName:String
 >~~~
 >- 논리형 : Bool<br>
-
+>
 >~~~
 >var boolName:Bool
 >~~~
-
+>
 >- 참조형 : ClassName
-
+>
 >~~~
 >var customView:UIView
 >var timer:Timer
