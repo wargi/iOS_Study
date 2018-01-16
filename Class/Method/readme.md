@@ -1,8 +1,6 @@
 # 2017.01.15 #
 
-## 1. 형변환 ##
-
-## 2. 여러가지 함수의 사용법 ##
+## 1. 여러가지 함수의 사용법 ##
 
 ### 1) Argument Name and Parameter Names ###
 - 인수명은 함수 호출시 사용 되는 이름. (Argument-아규먼트)<br>
@@ -82,7 +80,7 @@ swapTwoInts(&3, &107)
 */
 ~~~
 
-## 3. 함수 반환과 여러가지 함수 및 예제##
+## 2. 함수 반환과 여러가지 함수 및 예제##
 ### 1) 함수 반환 ###
 - 함수 실행 결과의 리턴 타입을 명시 해준다
 - return 키워드를 사용하여 함수 결과 반환
@@ -175,5 +173,5 @@ func printName(explain str: inout String) -> String
 }
 ~~~
 
-## 4. 함수관련 실습 과제 ##
+## 3. 함수관련 실습 과제 ##
 - [완료한 과제확인하기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/ToolBox/ToolBox/ToolBox.swift)

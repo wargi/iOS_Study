@@ -28,7 +28,7 @@
 
 >- [변수 / 함수](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/VariableAndMethod/readme.md)
 >
->- [여러가지 함수 사용법](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/TypeCastingAndMethod)
+>- [여러가지 함수 사용법](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
 >
 
 - **[3 week]**
