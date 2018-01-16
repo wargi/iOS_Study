@@ -135,9 +135,9 @@ class ToolBoxClass
     }
     
     //정수를 두개를 입력받아 두수를 합친수를 출력하는 함수 (ex: 3,4 입력시 >>> 34 /// 1,0 입력시 >>> 10)
-    func twoOfNumberAddToString(number1 : Int, number2 : Int) -> String
+    func twoOfNumberAddToString(number1 : Int, number2 : Int)
     {
-        return String(number1) + String(number2)
+        print("\(String(number1) + String(number2))")
     }
     
     //실수를 하나 입력받아서 소수점 첫번재 자리에서 반올림 후 정수를 반환해주는 함수
