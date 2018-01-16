@@ -30,6 +30,8 @@
 >
 >- [여러가지 함수 사용법](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
 >
+>- [조건문](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Conditional/readme.md)
+>
 
 - **[3 week]**
 
