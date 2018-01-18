@@ -15,16 +15,18 @@
 - +, -, *, /, % : 산술 연산자
 - ==, >, <, >=, <= : 비교 연산자
 - &&, ||, ! : 논리 연산자
-- 각각의 연산자의 설명은 설명이 잘 정리된 블로그 주소를 남깁니다<br>
-> [연산자 설명보러가기](https://xho95.github.io/swift/language/grammar/basic/operators/2016/04/27/Basic-Operators.html)
+- 각각의 연산자의 설명은 설명이 잘 정리된 곳의 주소를 남깁니다<br>
+-- [연산자 설명보러가기](https://xho95.github.io/swift/language/grammar/basic/operators/2016/04/27/Basic-Operators.html)
 
 ## 4. Swift의 switch
 - 스위프트에서는 스위치에 조금 더 많은 기능을 제공해준다.
 - where와 튜플을 이용하면 switch를 조금 더 유용하게 사용할 수 있다.
 
 ~~~
+	//윤년을 구해주는 함수
     func leap(year : Int) -> Bool {
         switch year {
+        //where조건을 추가하여 if문을 이용하지 않아도 switch로도 풀 수 있다!
         case year where year % 100 == 0 && year % 400 == 0 || year % 100 != 0 && year % 4 == 0:
             return true
         default:
@@ -33,7 +35,8 @@
     }
     
     /// 년도와 월을 입력 받으면 해당월의 마지막날이 몇일 인지 리턴해주는 함수(윤년을 고려해서)
-    /// 년도를 입력 받으면 윤년인지 구해 주는 함수를 호출해서 판단 후 yearAndMonth에 (윤년일시 true 아닐시 false를 입력해주고, 현재월)
+    /// 년도를 입력 받으면 윤년인지 구해 주는 함수를 호출해서 판단 후 yearAndMonth에
+    /// (윤년일시 true 아닐시 false를 리턴해온다, 현재월)
     /// - Parameters:
     ///   - year: 년도를 입력받는다
     ///   - month: 월을 입력받는다
