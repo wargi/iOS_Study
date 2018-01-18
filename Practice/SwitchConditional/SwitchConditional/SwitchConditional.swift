@@ -13,7 +13,7 @@ class ConditionalSwitch
     let PI : Double = 3.141592
     var grade : String = ""
     
-    //switch-case
+    //MARK: 기초 switch-case
     //월을 입력받아 해당월의 이름을 반환해주는 함수 (ex: 1 >>> "Jan", 12 >>> "Dec", 13 >> "Error"
     func monthNaming(month : Int) -> String
     {
@@ -110,7 +110,7 @@ class ConditionalSwitch
         }
     }
     
-    //응용
+    //MARK: 응용
     //등급을 평점으로 변환해주는 함수
     func gradeToPoint(grade : String) -> Double {
         
@@ -264,7 +264,7 @@ class ConditionalSwitch
     }
     
     //윤년을 구해서 결과를 참, 거짓으로 리턴하는 함수
-    func leaf(year : Int) -> Bool {
+    func leap(year : Int) -> Bool {
         switch year {
         case year where year % 100 == 0 && year % 400 == 0 || year % 100 != 0 && year % 4 == 0:
             return true
@@ -281,7 +281,7 @@ class ConditionalSwitch
     ///   - month: 월을 입력받는다
     /// - Returns: 마지막 일자를 리턴받는다
     func lastDayChange(year : Int, month : Int) -> Int {
-        let yearAndMonth = (leaf(year: year), month)
+        let yearAndMonth = (leap(year: year), month)
         switch yearAndMonth {
         case (false, 2):
             return 28

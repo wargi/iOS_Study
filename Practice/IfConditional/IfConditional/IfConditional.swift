@@ -10,12 +10,13 @@ import Foundation
 
 class  IfConditional
 {
+
+    //MARK: 기초
     // 시험 점수와 등급, 학점을 받을 공간 생성
     var score : Int = 0
     var grade : String = ""
     var point : Double = 0.0
     
-    //MARK: 기초
     // 등급을 받아서 학점을 리턴 해주는 함수
     func gradeToPoint(grade : String) -> Double {
         
