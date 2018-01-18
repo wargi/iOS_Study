@@ -1,4 +1,4 @@
-#2017.01.18
+# 2017.01.18
 
 ## 1. 반복문이란?
 - 반복적으로 실행되는 코드를 만드는 구문
@@ -35,5 +35,6 @@ for number in numbers
 ~~~
 
 ## 4. 반복문 실습 과제
-- [for-in문 실습 과제]()
+- [for-in문 실습 과제](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/For/For/For.swift)
+
 - [while문 실습 과제](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/While/While/While.swift)
