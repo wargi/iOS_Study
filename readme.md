@@ -32,6 +32,8 @@
 >
 >- [조건문](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Conditional/readme.md)
 >
+>- [반복문](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Loop/readme.md)
+>
 
 - **[3 week]**
 
