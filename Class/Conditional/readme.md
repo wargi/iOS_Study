@@ -23,7 +23,7 @@
 - where와 튜플을 이용하면 switch를 조금 더 유용하게 사용할 수 있다.
 
 ~~~
-	//윤년을 구해주는 함수
+//윤년을 구해주는 함수
     func leap(year : Int) -> Bool {
         switch year {
         //where조건을 추가하여 if문을 이용하지 않아도 switch로도 풀 수 있다!
