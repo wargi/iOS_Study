@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         let sw : ConditionalSwitch = ConditionalSwitch()
         
-        print("\(sw.lastDayChange(year: 2018, month: 2))")
+        print("\(sw.lastDayChange(year: 2100, month: 2))")
     }
 
     override func didReceiveMemoryWarning() {
