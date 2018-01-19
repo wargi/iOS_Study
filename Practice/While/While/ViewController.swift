@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  While
 //
-//  Created by 박소정 on 2018. 1. 18..
+//  Created by 박상욱 on 2018. 1. 18..
 //  Copyright © 2018년 sangwook park. All rights reserved.
 //
 
@@ -20,15 +20,6 @@ class ViewController: UIViewController {
         print("\(loop.triangular(number: 10))")
         print("\(loop.addAll(num: 12479))")
         print("\(loop.revers(num: 37591))")
-        
-        var oddDigits : Set = [ 1, 3, 5, 7, 9 ]
-        let evenDigits : Set = [2, 4, 6, 8]
-        let primeDigits : Set = [2, 3, 5, 7]
-        
-        oddDigits.intersection(evenDigits)
-        oddDigits.symmetricDifference(primeDigits)
-        oddDigits.union(evenDigits).sort()
-        oddDigits.subtract(primeDigits).sort()
     }
 
     override func didReceiveMemoryWarning() {

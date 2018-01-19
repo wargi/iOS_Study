@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  conditional
 //
-//  Created by 박소정 on 2018. 1. 16..
+//  Created by 욱 욱n 2018. 1. 16..
 //  Copyright © 2018년 sangwook park. All rights reserved.
 //
 
