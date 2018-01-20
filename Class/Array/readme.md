@@ -79,7 +79,7 @@ dic.updateValue("Seoul", forKey: "address")
 //결과 : ["name":"joo", "age":20, "job":"Developer", "isSingle":true, "address" : "seoul]//딕셔너리 수정dic.updateValue("winman", forKey: "name")
 //결과 : ["name":"winman", "age":20, "job":"Developer", "isSingle":true, "address" : "seoul]
 //삭제dic.removeValue(forKey: "isSingle")
-//결과 : ["name":"winman", "age":20, "job":"Developer",  "address" : "seoul]
+//결과 : ["name":"winman", "age":20, "job":"Developer", "address" : "seoul]
 //값 불러오기let introduce: String = "제 이름은" + (dic["name"] as! String) + "입니다."
 //결과 : 제 이름은 winman입니다.
  let doubleAge = (dic["age"] as! Int) * 2 //결과 : 40.0
