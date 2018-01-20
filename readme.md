@@ -83,9 +83,9 @@
 
 ## 3. Study
 
->- [계산기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Calculator/readme.md)
+>- [계산기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/Cal/Cal/ViewController.swift)
 >
->- [숫자야구]()
+>- [숫자야구](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BaseballGame/BaseballGame/ViewController.swift)
 
 <br><br>
 
