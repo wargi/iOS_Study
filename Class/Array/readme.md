@@ -20,19 +20,19 @@ var list :[String] = ["배열","선언"]
 
 //배열의 기능
 //배열의 Element 갯수
-list.count //값 : 2
+list.count //결과 : 2
 
 //빈 배열 확인
-list.isEmpty //값 : false
+list.isEmpty //결과 : false
 
 //Element 추가
-list.append("입니다") //값 : ["배열","선언","입니다"]
+list.append("입니다") //결과 : ["배열","선언","입니다"]
 
 //Element 삽입
-list.insert("의", at: 1) //값 : ["배열","의","선언","입니다"]
+list.insert("의", at: 1) //결과 : ["배열","의","선언","입니다"]
 
 //Element 삭제
-list.remove(at: 1) //값 : ["배열","선언","입니다"]
+list.remove(at: 1) //결과 : ["배열","선언","입니다"]
 ~~~
 
 ## 3. Set
@@ -44,28 +44,28 @@ var someInts:Set<Int> = [1,2,3,4]
 
 //Set의 기능
 //Set의 Element 갯수
-someInts.count //값 : 4
+someInts.count //결과 : 4
 
 //빈 Set 확인
-someInts.isEmpty //값 : false
+someInts.isEmpty //결과 : false
 
 //Element 추가
-someInts.insert(5) //값 : [1,2,3,4,5]
+someInts.insert(5) //결과 : [1,2,3,4,5]
 
 //Element 삭제
-list.remove(3) //값 : [1,2,4,5]
+list.remove(3) //결과 : [1,2,4,5]
 
 //Set의 추가 기능 예제
 func setTest(){
 let oddDigits : Set = [ 1, 3, 5, 7, 9 ]let evenDigits : Set = [2, 4, 6, 8]let primeDigits : Set = [2, 3, 5, 7]
 print("test======")
-//교집합 결과 oddDigits와 evenDigits의 값이 같은게 없으므로 빈 값
-let intersectList = oddDigits.intersection(evenDigits)print(intersectList)//교집합의 여집합의 결과 differenceList [1,2,9] 저장
+//교집합 | 결과 : oddDigits와 evenDigits의 값이 같은게 없으므로 빈 값
+let intersectList = oddDigits.intersection(evenDigits)print(intersectList)//교집합의 여집합 | 결과 : differenceList [1,2,9] 저장
 let differenceList = oddDigits.symmetricDifference(primeDigits)print(differenceList)
-//합집합 & 정렬 결과 unionList [1, 2, 3, 4, 5, 6, 7, 8, 9]
+//합집합 & 정렬 | 결과 : unionList [1, 2, 3, 4, 5, 6, 7, 8, 9]
 //정렬을 하고 unionList에 값을 넣어주므로 unionList는 배열로 저장된다
 let unionList = oddDigits.union(evenDigits).sorted()print(unionList)
-//차집합 & 정렬 	결과 subtractList에 [1, 9]가 정렬돠오 배열로 저장
+//차집합 & 정렬 | 결과 : subtractList에 [1, 9]가 정렬돠오 배열로 저장
 let subtractList = oddDigits.subtracting(primeDigits).sorted()print(subtractList)
 }
 ~~~
