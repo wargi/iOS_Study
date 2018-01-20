@@ -35,6 +35,8 @@
 >
 >- [반복문](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Loop/readme.md)
 >
+>- [배열](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Array)
+>
 
 - **[3 week]**
 
