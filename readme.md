@@ -83,7 +83,9 @@
 
 ## 3. Study
 
-
+>- [계산기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Calculator/readme.md)
+>
+>- [숫자야구]()
 
 <br><br>
 
