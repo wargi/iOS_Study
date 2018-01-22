@@ -169,7 +169,7 @@ class ArrayF
     func eratos(number : Int) -> [Int]
     {
         var count : Int = 1
-        var subArray : Set<Int> = [0]
+        var subArray : Set<Int> = []
         var tempArray : Set<Int> = []
         var resultArray : [Int] = []
         
@@ -181,15 +181,15 @@ class ArrayF
             {
                 subArray.insert(count)
             }
-            if count % 3 == 0 && count != 3
+            else if count % 3 == 0 && count != 3
             {
                 subArray.insert(count)
             }
-            if count % 5 == 0 && count != 5
+            else if count % 5 == 0 && count != 5
             {
                 subArray.insert(count)
             }
-            if count % 7 == 0 && count != 7
+            else if count % 7 == 0 && count != 7
             {
                 subArray.insert(count)
             }
