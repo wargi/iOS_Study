@@ -93,7 +93,12 @@ class ArrayF
     }
     
     //MARK: 실습과제 : 기초
-    //1. 시작과 끝수를 받아서 두 수 사이의 모든 수를 가지고 있는 배열 만들기
+    /// 1. 시작과 끝수를 받아서 두 수 사이의 모든 수를 가지고 있는 배열 만들기
+    ///
+    /// - Parameters: 시작과 끝수를 받아온다.
+    ///   - start: 배열의 시작값
+    ///   - last: 배열의 마지막값
+    /// - Returns: 만들어진 배열을 리턴
     func startAndLast(start : Int, last : Int) -> [Int] {
         var arr : [Int] = []
         for n in start...last {
@@ -102,16 +107,21 @@ class ArrayF
         return arr
     }
     
-    //2. 정수 타입의 배열을 입력받아 모든 배열의 수의 합을 리턴하는 함수
+    /// 2. 정수 타입의 배열을 입력받아 모든 배열의 수의 합을 리턴하는 함수
+    ///
+    /// - Parameter arr: 정수타입의 배열
+    /// - Returns: 모든 배열의 수의 합
     func arrAllSum(arr : [Int]) -> Int {
         var sum : Int = 0
         for n in arr {
-            sum += arr[n]
+            sum += n
         }
         return sum
     }
     
-    //3. 딕셔너리에 있는 모든 데이터 출력하는 함수
+    /// 3. 딕셔너리에 있는 모든 데이터 출력하는 함수
+    ///
+    /// - Parameter dic: 딕셔너리
     func dicotionaryPrint(dic : [String:Any]) {
         for (key, value) in dic {
             print("키 : \(key) 값 : \(value)")
@@ -119,7 +129,10 @@ class ArrayF
     }
     
     //MARK: 실습과제 : 중급
-    //1. 정수 타입의 배열을 받아서 배열안의 중복돤 수를 모두 제거된 배열을 반환하는 함수
+    /// 1. 정수 타입의 배열을 받아서 배열안의 중복돤 수를 모두 제거된 배열을 반환하는 함수
+    /// : set에 값을 넣을시에 자동으로 중복 제거 -> set을 정렬하면 배열로 인식 -> arrTemp에 넣어준다.
+    /// - Parameter arr: 정수 타입의 배열
+    /// - Returns: 중복된 수를 모두 제거된 배열
     func setToArr(arr : [Int]) -> [Int] {
         var arrTemp : [Int] = []
         var setTemp : Set<Int> = []
@@ -131,12 +144,25 @@ class ArrayF
         return arrTemp
         }
     
+    /* 다른방법
+     func (arr : [Int]) -> [Int] {
+     var arrTemp : [Int] = []
+     for index in arr {
+        if !arrTemp.contatins(index)
+             {
+                arrTemp.append(index)
+             }
+        }
+        return arrTemp
+     }
+    */
+    
     //2. 정수 배열을 입력받아, 배열의 요소 중 두 개를 선택하는 조합을 모두 포함하는 배열을 작성하세요.
-    func arrAddArray(arr : [Int]) -> [Any] {
-        var arrTemp : [Any] = []
-        for i in 0...arr.count - 2
+    func arrAddArray(arr : [Int]) -> [[Int]] {
+        var arrTemp : [[Int]] = []
+        for i in 0..<arr.count
         {
-            for j in (i+1)...arr.count - 1
+            for j in i+1..<arr.count
             {
                 arrTemp.append([arr[i], arr[j]])
             }
@@ -150,9 +176,9 @@ class ArrayF
     func arrSort(arr : [Int]) -> [Int] {
         var arrTemp : [Int] = arr
         var numTemp : Int = 0
-        for i in 0...arrTemp.count - 2
+        for i in 0..<arrTemp.count
         {
-            for j in (i+1)...arrTemp.count - 1
+            for j in i+1..<arrTemp.count
             {
                 if arrTemp[i] > arrTemp[j]
                 {
