@@ -168,32 +168,30 @@ class ArrayF
     //에라토스테체 알고리즘을 이용하여 입력된 숫자까지의 모든 소수의 배열을 반환하는 함수
     func eratos(number : Int) -> [Int]
     {
-        var count : Int = 1
         var subArray : Set<Int> = []
         var tempArray : Set<Int> = []
         var resultArray : [Int] = []
         
-        while count <= number {
+        for index in 1...number {
             
-            tempArray.insert(count)
+            tempArray.insert(index)
             
-            if count % 2 == 0 && count != 2
+            if index % 2 == 0 && index != 2
             {
-                subArray.insert(count)
+                subArray.insert(index)
             }
-            else if count % 3 == 0 && count != 3
+            else if index % 3 == 0 && index != 3
             {
-                subArray.insert(count)
+                subArray.insert(index)
             }
-            else if count % 5 == 0 && count != 5
+            else if index % 5 == 0 && index != 5
             {
-                subArray.insert(count)
+                subArray.insert(index)
             }
-            else if count % 7 == 0 && count != 7
+            else if index % 7 == 0 && index != 7
             {
-                subArray.insert(count)
+                subArray.insert(index)
             }
-            count += 1
         }
         resultArray = tempArray.subtracting(subArray).sorted()
         return resultArray
