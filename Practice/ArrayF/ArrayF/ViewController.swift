@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         print(arrA)
         let arrAr : [Any] = arr.arrAddArray(arr: arrA)
         print(arrAr)
-        arrA = arr.eratos(number: 120)
+        arrA = arr.eratos(number: 10000)
         print(arrA)
         }
 

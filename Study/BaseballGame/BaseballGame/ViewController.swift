@@ -21,38 +21,43 @@ class ViewController: UIViewController {
     {
         //랜덤으로 숫자를 얻어내서 시크릿 번호 3개 알아내기
         var randomNumberList:[Int] = []
-        var count : Int = 0
-        var tempNum : Int = 0
         
         //랜덤 숫자 얻는 코드! 10 = 0~9까지는 랜덤숫자한개(중복제거)
-        while count < 3 {
+        while randomNumberList.count < 3 {
             //랜덤한 숫자 생성
             let randomNum:Int = Int(arc4random_uniform(10))
             
-            //첫번째 randomNum은 중복 검사를 할 필요가 없으므로 바로 대입
-            if count == 0 {
+            //강사님이 해준신 것
+            if !randomNumberList.contains(randomNum) {
                 randomNumberList.append(randomNum)
-                count += 1
             }
+            
+            //내가 한거
+            //첫번째 randomNum은 중복 검사를 할 필요가 없으므로 바로 대입
+//            if count == 0 {
+//                randomNumberList.append(randomNum)
+//                count += 1
+//            }
             //두번째 randomNum부터는 randomNumberList에 있는 랜덤값을 비교한 후 값이 다를시 대입
-            else
-            {
-                for index in randomNumberList
-                {
-                    if index != randomNum
-                    {
-                        tempNum += 1
-                    }
-                }
-                if tempNum == randomNumberList.count
-                {
-                    randomNumberList.append(randomNum)
-                    count += 1
-                }
-                tempNum = 0
-            }
+//            else
+//            {
+//                for index in randomNumberList
+//                {
+//                    if index != randomNum
+//                    {
+//                        tempNum += 1
+//                    }
+//                }
+//                if tempNum == randomNumberList.count
+//                {
+//                    randomNumberList.append(randomNum)
+//                    count += 1
+//                }
+//                tempNum = 0
+//            }
+//        }
         }
-        return randomNumberList
+         return randomNumberList
     }
 
     /* 결과 확인

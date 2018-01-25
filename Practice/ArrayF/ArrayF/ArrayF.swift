@@ -191,35 +191,39 @@ class ArrayF
         return arrTemp
     }
     
+    func selectionSort(arr : [Int])-> [Int] {
+        var arrTemp : [Int] = arr
+        for number in 0..<arrTemp.count {
+            for index in number+1..<arrTemp.count {
+                if arrTemp[number] > arrTemp[index] {
+                    arrTemp.swapAt(number, index)
+                }
+            }
+        }
+        return arrTemp
+    }
+    
     //에라토스테체 알고리즘을 이용하여 입력된 숫자까지의 모든 소수의 배열을 반환하는 함수
     func eratos(number : Int) -> [Int]
     {
-        var subArray : Set<Int> = []
-        var tempArray : Set<Int> = []
         var resultArray : [Int] = []
         
-        for index in 1...number {
-            
-            tempArray.insert(index)
-            
-            if index % 2 == 0 && index != 2
+        for index in 1...number
+        {
+            if index % 2 != 0 || index == 2
             {
-                subArray.insert(index)
-            }
-            else if index % 3 == 0 && index != 3
-            {
-                subArray.insert(index)
-            }
-            else if index % 5 == 0 && index != 5
-            {
-                subArray.insert(index)
-            }
-            else if index % 7 == 0 && index != 7
-            {
-                subArray.insert(index)
+                if index % 3 != 0 || index == 3
+                {
+                    if index % 5 != 0 || index == 5
+                    {
+                        if index % 7 != 0 || index == 7
+                        {
+                            resultArray.append(index)
+                        }
+                    }
+                }
             }
         }
-        resultArray = tempArray.subtracting(subArray).sorted()
         return resultArray
     }
 }
