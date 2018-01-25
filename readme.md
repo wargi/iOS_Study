@@ -24,6 +24,8 @@
 - **[1 week]**
 
 >- [Git](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/GIT/readme.md)
+>
+>- [객체지향](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ObjectOriented%20Programming)
 
 - **[2 week]**
 
