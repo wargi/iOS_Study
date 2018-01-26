@@ -42,9 +42,13 @@
 
 - **[3 week]**
 
->- [클래스]()
+>- [클래스와 구조체]()
 >
->- [옵셔널]()
+>- [옵셔널](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Optional)
+>
+>- [프로퍼티]()
+>
+>- [접근제어자](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/AccessControl)
 
 - **[4 week]**
 
