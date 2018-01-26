@@ -23,30 +23,31 @@
 //클래스의 접근제어는 public
 public class SomePublicClass
 {
-    public var somePublicProperty = 0//외부에서도 사용 가능
-    var someInternalProperty = 0//(기본값 : internal)내부의 다른파일에서도 사용 가능
-    fileprivate func someFilePrivateMethod() {}//같은 파일내부에서만 사용 가능
-    private func somePrivateMethod() {}//같은 클래스에서만 사용 가능
+    public var somePublicProperty = 0 //외부에서도 사용 가능
+    var someInternalProperty = 0 //(기본값 : internal)내부의 다른파일에서도 사용 가능
+    fileprivate func someFilePrivateMethod() {} //같은 파일내부에서만 사용 가능
+    private func somePrivateMethod() {} //같은 클래스에서만 사용 가능
 }
 
 //클래스의 접근제어자는 internal
 class SomeInternalClass
 {
     var someInternalProperty = 0 //기본값 : internal
-    fileprivate func someFilePrivateMethod() {}    	 private func somePrivateMethod() {}
+    fileprivate func someFilePrivateMethod() {}
+    private func somePrivateMethod() {}
 }
 
 //클래스의 접근제어자는 fileprivate
 fileprivate class SomeFilePrivateClass
 {
-    func someFilePrivateMethod() {}//클래스가 fileprivate이므로 접근제어자를 생략할 시에 접근제어자는 fileprivate
-    private func somePrivateMethod() {}//
+    func someFilePrivateMethod() {} //클래스가 fileprivate이므로 접근제어자를 생략할 시에 접근제어자는 fileprivate
+    private func somePrivateMethod() {}
 }
 
 //클래스의 접근제어자는 private
 private class SomePrivateClass
 {
-    func somePrivateMethod() {}//클래스가 private이므로 접근제어자를 생략할 시에 접근제어자는 private
+    func somePrivateMethod() {} //클래스가 private이므로 접근제어자를 생략할 시에 접근제어자는 private
 
 }
 ~~~
