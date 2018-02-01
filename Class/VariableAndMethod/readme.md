@@ -11,7 +11,7 @@
 - 함수 선언<br>
 > 키워드 + 함수명(Name) + 입력값(Input Value) + 함수 내용(Action) + 결과타입(Return Type)<br>
 
-~~~
+```swift
 // 변수 선언
 var vName : Any
 
@@ -28,7 +28,7 @@ func vName(_ parameter: Any) -> Any
 }
 
 //타입에 선언 된 Any는 스위프트 내의 모든 타입을 나타냄
-~~~
+```
 
 ## 3. 변수명 규칙 ##
 - 변수 안에 들어갈 데이터를 표현하는 이름으로 작성<br>
@@ -41,39 +41,39 @@ func vName(_ parameter: Any) -> Any
 ## 4. 변수 타입 ##
 >- 정수형 : Int<br>
 >
->~~~
+>```swift
 >var intName:Int
->~~~
+>```
 >
 >- 실수형 : Double<br>
 >
->~~~
+>```swift
 >var doubleName:Double
->~~~
+>```
 >
 >- 문자형 : String<br>
 >
->~~~
+>```swift
 >var stringName:String
->~~~
+>```
 >- 논리형 : Bool<br>
 >
->~~~
+>```swift
 >var boolName:Bool
->~~~
+>```
 >
 >- 참조형 : ClassName
 >
->~~~
+>```swift
 >var customView:UIView
 >var timer:Timer
->~~~
+>```
 
 ## 5. 변수 값 지정 ##
 ![변수값지정](./Value.png)
 
 ## 6. 다양한 형태의 변수 선언 ##
-~~~
+```swift
 //일반 변수 선언
 var name:String = “joo”
 
@@ -86,7 +86,7 @@ let PI = 3.14
 //옵셔널 변수 선언
 var address:String?
 address = “서울시 신사동”
-~~~
+```
 
 ## 7. 형변환(TypeCasting)
 - 다른 형태의 타입을 가진 변수를 계산할려고 할때 같은 타입으로 임시적으로 바꾸어주어 계산을 가능하게 해준다.<br>

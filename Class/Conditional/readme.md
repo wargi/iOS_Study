@@ -22,7 +22,7 @@
 - 스위프트에서는 스위치에 조금 더 많은 기능을 제공해준다.
 - where와 튜플을 이용하면 switch를 조금 더 유용하게 사용할 수 있다.
 
-~~~
+```swift
 //윤년을 구해주는 함수
     func leap(year : Int) -> Bool {
         switch year {
@@ -56,7 +56,7 @@
             return 31
         }
     }
-~~~
+```
 
 ## 5. 조건문관련 실습 과제
 - [if문 과제](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/IfConditional/IfConditional/IfConditional.swift)

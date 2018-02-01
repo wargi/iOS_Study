@@ -8,7 +8,7 @@
 - 인수명은 생략가능하며, 생략하면 매개변수명이 인수명로 사용된다.<br>
 - 인수명을 제거하고 싶으면 와일드카드 ( _ )를 사용한다.<br>
 
-~~~
+```swift
 // 예시 
 // 일반적 선언
 func methodName(argumentName parameterName : Any) -> Any
@@ -30,13 +30,13 @@ func methodName(_ parameterName : Any) -> Any
 
 // 함수 호출 : 함수이름(아규먼트 : 값) - 밖에선 인수명으로 사용 
 methodName(argumentName: 10)
-~~~
+```
 
 ### 2) Default Parameter Values ###
 - 매개변수(파라미터) 기본값을 설정할 수 있다.<br>
 - 매개변수(파라미터) 값이 들어오지 않을때 기본값이 사용된다.<br>
 
-~~~
+```swift
 // 예시
 // Default Parameter 값이 들어간 함수 선언
 // number함수는 인자값(num1, num2)을 받아 더한 후 결과값을 리턴해주는 함수
@@ -52,7 +52,7 @@ number(num1: 10)
 number(num1: 10, num2: 5)
 // num1 : 10, num2 : 5, 리턴값 : 15
 
-~~~
+```
 
 ### 3) In-Out Parameter Keyword ###
 - 파라미터는 상수값이다 왜냐하면 함수에서 이루어지는 행위는 가져온 인자값에 영향을 끼치지 않는다.<br>
@@ -61,7 +61,7 @@ inout매개변수로 지정 해야 한다.<br>
 - inout매개변수 지정은 타입 앞에 inout keyword를 작성해준다.<br>
 - inout 변수가 지정된 함수의 넘겨주는 아규먼트값 앞에서 &(주소정보)를 붙어야 한다.
 
-~~~
+```swift
 // 예시
 // 받아오는 인자들의 값을 서로 바꾸어주는 함수이다.
 // 교환을 위한 임시 저장 장소 : temporaryA
@@ -78,7 +78,7 @@ swapTwoInts(&3, &107)
 데이터를 변수에 저장하고 그 변수의 주소값을 보내주어야 하기에
 위 예제처럼 정수, 문자 등과 같이 '값'만 전달 해줄 수 없다
 */
-~~~
+```
 
 ## 2. 함수 반환과 여러가지 함수 및 예제 ##
 ### 1) 함수 반환 ###
@@ -87,7 +87,7 @@ swapTwoInts(&3, &107)
 - 반환 타입과 같은 타입의 데이터를 반환 해야 한다
 - 한개의 값만 반환 할수 있다.
 
-~~~
+```swift
 // 정수형 값을 반환 해주는 함수
 func fName(agumentName paramName:Int) -> Int
 {
@@ -101,11 +101,11 @@ func fName(agumentName paramName:Int) -> Int
 {
     // 함수내용
 }
-~~~
+```
 
 ### 2) 여러가지 함수 예제 ###
 
-~~~
+```swift
 // 가져온 정수를 리턴 해주는 함수
 func pass(num:Int) -> Int
 {
@@ -171,7 +171,7 @@ func printName(explain str: inout String) -> String
    str += “joo”
    return str
 }
-~~~
+```
 
 ## 3. 함수관련 실습 과제 ##
 - [완료한 과제확인하기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/ToolBox/ToolBox/ToolBox.swift)
