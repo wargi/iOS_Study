@@ -92,13 +92,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func buttonFrame(buttonL : [UIButton])
-    {
-        for number in 0..<buttonL.count {
-            let col : Int = col * number
-            let row : Int = row * number
-        }
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

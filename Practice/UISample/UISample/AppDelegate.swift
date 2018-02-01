@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Calculator3
+//  UISample
 //
-//  Created by 박상욱 on 2018. 1. 30..
+//  Created by 박소정 on 2018. 2. 1..
 //  Copyright © 2018년 sangwook park. All rights reserved.
 //
 
