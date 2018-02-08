@@ -15,26 +15,23 @@ class ViewController: UIViewController {
     {
         super.viewDidLoad()
         
+        var count : Int?
         let myC : MyCustomView = MyCustomView(frame: CGRect(x: 15, y: 15, width: view.bounds.width, height: view.bounds.height))
-
+        let str : String = "버튼을 선택 하셨습니다."
         self.view.addSubview(myC)
         
-        myC.addTarget(self, action: #selector(clickEvent(_:)), event: .touchUpInside)
+        count = myC.addTarget(self, action: #selector(), event: .touchUpInside)
         //글꼴 목록 호출
 //        printAllFontName()
-    }
-    
-    @objc func clickEvent(_ sender: UIButton) {
-        let str : String = "버튼을 선택 하셨습니다."
-        switch sender.tag {
+        switch count! {
         case 0:
-            
+            myC.mainLBTitle = myC.lableArray[count!].text! + str
         case 1:
-            mainLB.text = lableArray[sender.tag].text! + str
+            myC.mainLBTitle = myC.lableArray[count!].text! + str
         case 2:
-            mainLB.text = self.lableArray[sender.tag].text! + str
+            myC.mainLBTitle = myC.lableArray[count!].text! + str
         case 3:
-            mainLB.text = self.lableArray[sender.tag].text! + str
+            myC.mainLBTitle = myC.lableArray[count!].text! + str
         default:
             return
         }

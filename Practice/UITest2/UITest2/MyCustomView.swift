@@ -12,19 +12,15 @@ class MyCustomView: UIView {
     //글꼴 확인 레이블 생성
     private var mainLB : UILabel!
     private let imagTemp : UIImage = UIImage(named: "Logo.jpeg")!
-    private var lableArray : [UILabel] = []
+    var lableArray : [UILabel] = []
     private var imageArray : [UIImageView] = []
-    private var btnArray : [UIButton] = []
+    var btnArray : [UIButton] = []
     private var titleArray : [String] = ["첫번째","두번째","세번째","네번째"]
     
-    var btnTagValue:Int? {
+    var mainLBTitle:String {
         get {
-            btnArray
-        }
-    }
-    var mainLBTitle:String? {
-        get {
-            return mainLB.text
+            guard let myLBText = mainLB.text else { return "에러" }
+            return myLBText
         }
         set {
             mainLB.text = newValue
@@ -87,10 +83,13 @@ class MyCustomView: UIView {
         mainLB.frame = CGRect(x: offsetX - width - 25, y: offsetY + width + 50, width: width * 2 + 25, height: width)
     }
     
-    func addTarget(_ taget: Any, action: Selector, event: UIControlEvents) {
+    func addTarget(_ taget: Any, action: Selector, event: UIControlEvents) -> Int {
+        var count: Int = 0
         for button in btnArray {
             button.addTarget(taget, action: action, for: event)
+            count = button.tag
         }
+        return count
     }
 
     required init?(coder aDecoder: NSCoder) {
