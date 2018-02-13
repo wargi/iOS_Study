@@ -44,11 +44,11 @@
 
 >- [Class & Struct](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ClassAndStruct)
 >
->- [Class & Init]()
+>- [Class & Init](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ClassAndInit)
 >
 >- [Optional](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Optional)
 >
->- [Property]()
+>- [Property](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Property)
 >
 >- [AccessControl](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/AccessControl)
 
