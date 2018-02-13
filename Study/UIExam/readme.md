@@ -22,7 +22,7 @@
 
 ## 3. 구현
 - 구현 이미지<br>
-<img src="ex2.png" width="50%">
+<img src="ex2.png" width="30%">
 - ViewController부분을 제외하고 3개의 부분으로 나누어 클래스를 생성하였다
 
 > <코드>

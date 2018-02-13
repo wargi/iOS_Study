@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let str : String = "버튼을 선택 하셨습니다."
         self.view.addSubview(myC)
         
-        count = myC.addTarget(self, action: #selector(), event: .touchUpInside)
+        
         //글꼴 목록 호출
 //        printAllFontName()
         switch count! {
