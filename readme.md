@@ -25,13 +25,11 @@
 
 >- [Git](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/GIT/readme.md)
 >
->- [객체지향](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ObjectOriented%20Programming)
+>- [Object-Oriented](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ObjectOriented%20Programming)
 
 - **[2 week]**
 
 >- [Variable / Method](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/VariableAndMethod/readme.md)
->
->- [여러가지 함수 사용법](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
 >
 >- [Conditional](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Conditional/readme.md)
 >
@@ -54,11 +52,31 @@
 
 - **[4 week]**
 
->- [FrameBase를 이용한 계산기 만들기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/Calculator3/Calculator3/ViewController.swift)
+>- [UI]()
+>
+>- [UIView]()
+>
+>- [UILabel]()
+>
+>- [UIImageView]()
+>
+>- [UIButton]()
 
 - **[5 week]**
 
->-
+>- [LifeCycle]()
+>
+>- [Delegate Pattern]()
+>
+>- [UITextField & UIScrollView]()
+>
+>- [UIViewController]()
+>
+>- [UIAlertController]()
+>
+>- [NavigationController]()
+>
+>- [UserDefault]()
 
 - **[6 week]**
 
@@ -93,10 +111,13 @@
 
 ## 3. Study
 
+>- [여러가지 함수 사용법](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
+>
 >- [계산기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/Cal/Cal/ViewController.swift)
 >
 >- [숫자야구](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BaseballGame/BaseballGame/ViewController.swift)
-
+>
+>- [FrameBase를 이용한 계산기 만들기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/Calculator3/Calculator3/ViewController.swift)
 <br><br>
 
 ## 4. Contact Information
