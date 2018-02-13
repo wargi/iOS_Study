@@ -118,6 +118,8 @@
 >- [숫자야구](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BaseballGame/BaseballGame/ViewController.swift)
 >
 >- [FrameBase를 이용한 계산기 만들기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/Calculator3/Calculator3/ViewController.swift)
+>
+>- [자판기 만들기](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Study/UIExam)
 <br><br>
 
 ## 4. Contact Information
