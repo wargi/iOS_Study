@@ -1,7 +1,48 @@
 # 2018.01.25
 ## 1. 옵셔널이란?
-- 클래스나 구조체 혹은 메서드에 프로퍼티를 선언해줄 때 값을 초기화 해주지 않으면 변수나 상수에는 nil값이 들어간다. 하지만 XCODE에서는 프로그램의 안정성을 위해 프로퍼티를 초기화 하지 않을 시에 값이 있는지 없는지 확실하게(?) 해달라는 컴파일오류가 발생한다.
-- 이런 컴파일 오류를 해결하기 위해서 XCODE에서는 옵셔널을 선언해줘야 합니다.
+- nil인 상태에서 속성을 참조하거나, 함수를 실행시 발생하는 error로 인한 코드의 불안정성 내포
+- Swift의 중요한 특징 중 하나는 Safety!! •Type Safety를 위해 컴파일러 수준의 nil 체크
+- 만약 nil인 변수 선언을 해야할 경우 optional을 사용한다.
+- optional은 두가지 가능성을 가질수 있는데 한개는 값이 있음을(!기호) 나타내고 또다른 한가지는 nil일 가능성을 내포하고 있다.(?기호)
 
 ## 2. 옵셔널 선언
-![변수값지정](./Optional1.png)
+![변수값지정](./Optional.png)
+
+## 3. 옵셔널 바인딩 방법
+
+~~~swift
+//1. 옵셔널 강제해제
+func testFuc(optionalStr:String?)
+{
+	if optionalStr != nil
+	{
+		let unwrapStr:String = optionalStr!
+		print(unwrapStr)
+	}
+}
+
+//2. 옵셔널 선택적 해제
+func isNumber(inputNum1:String, inputNum2:String) -> Bool
+{
+//(,) 콤마를 통해 옵셔널 바인딩을 추가하고, 또 조건도 추가 할수 있다.
+	if let firstNumber = Int(inputNum1), let secondNumber = Int(inputNum1)
+	{
+		return true
+	} else
+	{
+		return false
+	}
+}
+
+//3. Early Exit
+func testFuc(optionalStr:String)
+{
+	guard let unwrapStr:String = optionalStr else
+	{
+		//조건값이 거짓일때 실행
+		//종료 조건이 항상 필요
+		return
+	}
+	print(unwrapStr)
+}
+~~~
