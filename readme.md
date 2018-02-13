@@ -29,26 +29,28 @@
 
 - **[2 week]**
 
->- [변수 / 함수](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/VariableAndMethod/readme.md)
+>- [Variable / Method](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/VariableAndMethod/readme.md)
 >
 >- [여러가지 함수 사용법](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
 >
->- [조건문](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Conditional/readme.md)
+>- [Conditional](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Conditional/readme.md)
 >
->- [반복문](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Loop/readme.md)
+>- [Loop](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Loop/readme.md)
 >
->- [배열](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Array)
+>- [Array](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Array)
 >
 
 - **[3 week]**
 
->- [클래스와 구조체]()
+>- [Class & Struct](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ClassAndStruct)
 >
->- [옵셔널](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Optional)
+>- [Class & Init]()
 >
->- [프로퍼티]()
+>- [Optional](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Optional)
 >
->- [접근제어자](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/AccessControl)
+>- [Property]()
+>
+>- [AccessControl](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/AccessControl)
 
 - **[4 week]**
 

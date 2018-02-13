@@ -10,19 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    override func loadView() {
+        print("loadView")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let sub:SubJect = SubJect(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-        self.view.addSubview(sub)
-        
-        
-        sub.addTarget(self, action: #selector(self.clickedEvent(_:)), for: .touchUpInside)
-        
+        print("viewDidLoad")
     }
-
-    @objc func clickedEvent(_ sender : UIButton) {
-        print("touch")
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear")
+    }
+    override func viewWillLayoutSubviews() {
+        print("viewWillLayoutSubviews")
+    }
+    override func viewDidLayoutSubviews() {
+        print("viewDidLayoutSubviews")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear")
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        print("viewDidDisappear")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

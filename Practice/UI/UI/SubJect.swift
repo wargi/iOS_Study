@@ -17,9 +17,6 @@ class SubJect: UIImageView {
         super.init(image: UIImage(named: "Logo.jpeg"))
         self.frame = frame
         create()
-        
-        
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,14 +37,13 @@ class SubJect: UIImageView {
         //버튼 생성
         mainBtn = UIButton()
         mainBtn.frame = mainLB.bounds
-        mainBtn.addTarget(self, action: #selector(self.addTarget(_:action:for:)), for: .touchUpInside)
         mainLB.addSubview(mainBtn)
         mainLB.isUserInteractionEnabled = true
         
     }
 
-    @objc func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControlEvents)
+    func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControlEvents)
     {
-        self.addTarget(target, action: action, for: controlEvents)
+        mainBtn.addTarget(target, action: action, for: controlEvents)
     }
 }
