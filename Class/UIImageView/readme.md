@@ -1,11 +1,31 @@
-# 2018.01.29
+# 2018.01.31
 
-## 1. 좌표계 Frame-Base
-![좌표](./FrameBase.png)<br><br>
-<right> View의 위치는 상대적으로 상위뷰를 기준으로 위치를 잡는다<br>
-![좌표](./FrameBase2.png)
+## 1. UIImageView
+- 인터페이스에 단일 이미지 또는 애니메이션 이미지 시퀀스를 표시해주는 뷰.
 
-## 2. FrameWork
-- 애플리케이션 프레임워크(Application Framework)는 프로그래 밍에서 특정 운영 체제를 위한 응용 프로그램 표준 구조를 구현 하는 클래스와 라이브러리 모임이다. 간단하게 프레임워크라고 부른다.
-- 재사용할 수 있는 수많은 코드를 프레임워크로 통합함으로써 개 발자가 새로운 애플리케이션을 위한 표준 코드를 다시 작성하지 않아도 같이 사용된다.
-- 프레임워크의 구현은 객체 지향 프로그래밍 기법이 사용되고 있 는 응용 프로그램 고유의 클래스가 프레임워크의 기존 클래스를 상속할 수 있다.
+
+## 2. UIImageView Content Mode
+<img src="ex1.png" width="100%">
+
+## 3. UIImageView 예제
+
+<img src="ex2.png" width="30%">
+
+~~~swift
+//실습코드
+//이미지뷰 생성 및 프레임 설정
+let newImgV = UIImageView(frame: 
+CGRect(x: view.bounds.width / 2 - 150, y: 100, width: 300, height: 200))
+
+//Add Image File
+//단일 이미지 리소스 추가
+//Assets.xcassets에 추가
+//ho.JPG 이미지 추가
+newImgV.image = UIImage(named:"ho.JPG")
+
+//contentMode 설정
+newImgV.contentMode = UIViewContentMode.scaleAspectFit
+
+//root view에 newImgV를 올린다.
+self.view.addSubview(newImgV)
+~~~
