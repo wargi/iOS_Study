@@ -14,7 +14,7 @@ open var tag: Int
 
 //뷰의 크기설정
 //프레임과 바운즈의 차이
-//: 상위뷰의 좌표와 관계없을때 바운즈, 있을때는 프레임
+//: 상위뷰의 frame과 관계없을 때 바운즈, 있을 때는 프레임
 open var frame: CGRect
 open var bounds: CGRect
 
@@ -27,8 +27,12 @@ open var clipsToBounds: Bool
 //뷰의 배경색
 open var backgroundColor: UIColor?
 
-//뷰가 숨길지를 정하는 속성
+//뷰를 숨길지의 여부
 open var isHidden: Bool
+
+//매번 뷰의 내용을 다시 그린다.
+//대신 이 속성을 사용하면 내용의 크기를 조절(왜곡 여부를 지정)
+//뷰를 특정 지점에 고정시킬 수 있다.
 open var contentMode: UIViewContentMode
 
 //어떤뷰위에 자신의 뷰를 올릴때 사용하는 함수
@@ -41,11 +45,11 @@ open func insertSubview(_ view: UIView, at index: Int)
 open func removeFromSuperview()
 ~~~
 
-## 3. UIView만들기 실습
+## 3. UIView 실습
 <img src="ex1.png" width="100%">
 
-## 4. 실습결과
+## 4. 실습 결과
 - 실습 결과 화면<br>
  <img src="ex2.png" align="" width="30%">
  
-- [실습코드](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/UIViewSample/UIViewSample/ViewController.swift)  
+- [실습코드 보기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/UIViewSample/UIViewSample/ViewController.swift)  

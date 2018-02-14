@@ -35,28 +35,28 @@
 >
 >- [Loop](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Loop/readme.md)
 >
->- [Array](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Array)
+>- [Array](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Array/readme.md)
 >
 
 - **[3 week]**
 
->- [Class & Struct](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ClassAndStruct)
+>- [Class & Struct](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ClassAndStruct/readme.md)
 >
->- [Class & Init](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ClassAndInit)
+>- [Class & Init](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ClassAndInit/readme.md)
 >
->- [Optional](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Optional)
+>- [Optional](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Optional/readme.md)
 >
->- [Property](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Property)
+>- [Property](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/Property/readme.md)
 >
->- [AccessControl](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/AccessControl)
+>- [AccessControl](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/AccessControl/readme.md)
 
 - **[4 week]**
 
->- [FrameWork](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/FrameWork)
+>- [FrameWork](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/FrameWork/readme.md)
 >
->- [UIView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIView)
+>- [UIView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIView/readme.md)
 >
->- [UILabel](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UILabel)
+>- [UILabel](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UILabel/readme.md)
 >
 >- [UIImageView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIImageView)
 >
