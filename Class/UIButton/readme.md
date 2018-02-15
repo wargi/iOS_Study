@@ -1,11 +1,90 @@
-# 2018.01.29
+# 2018.02.01
 
-## 1. 좌표계 Frame-Base
-![좌표](./FrameBase.png)<br><br>
-<right> View의 위치는 상대적으로 상위뷰를 기준으로 위치를 잡는다<br>
-![좌표](./FrameBase2.png)
+## 1. UIControl
+- UIComponent에 사용자 인터렉션에 의한 응답에 대해 특별한 액션을 줄수 있게 설정하는 클래스
 
-## 2. FrameWork
-- 애플리케이션 프레임워크(Application Framework)는 프로그래 밍에서 특정 운영 체제를 위한 응용 프로그램 표준 구조를 구현 하는 클래스와 라이브러리 모임이다. 간단하게 프레임워크라고 부른다.
-- 재사용할 수 있는 수많은 코드를 프레임워크로 통합함으로써 개 발자가 새로운 애플리케이션을 위한 표준 코드를 다시 작성하지 않아도 같이 사용된다.
-- 프레임워크의 구현은 객체 지향 프로그래밍 기법이 사용되고 있 는 응용 프로그램 고유의 클래스가 프레임워크의 기존 클래스를 상속할 수 있다.
+## 2. UIControl Class
+~~~swift
+//기본상태
+public static var normal: UIControlState { get }
+
+//누르고 있는 상태
+public static var highlighted: UIControlState { get }
+
+//이벤트 비활성화
+open var isEnabled: Bool
+
+//선택된 상태
+open var isSelected: Bool
+
+//controlEvents가 발생되었을때 target에 있는 action 실행
+open func addTarget(_ target: Any?,
+                       action: Selector,
+            for controlEvents: UIControlEvents)
+~~~
+
+## 3. UIButton
+- 버튼 클릭시 발생하는 UIControl의 이벤트에 대한 응답을 실행하는 컨트롤러
+
+## 4. UIButton 구조
+- 사용자의 이벤트를 받아 처리해주는 UI
+<img src="ex1.png" width="100%">
+- 버튼 구조 : Title, Image, backgroundImage
+
+## 5. 실습
+normal -> <img src="ex2.png" width="31.5%"> selected ->  <img src="ex3.png" width="30%"><br>
+
+
+~~~swift
+// myCustumBtn 버튼 생성
+var myCustumBtn : UIButton!
+
+func create() {
+	//myCustumBtn 초기화 및 프레임 설정
+	myCustumBtn = UIButton(frame: 
+	CGRect(x: 100, y: 100, width: 200, height: 200))
+	
+	//myCustumBtn의 normal 상태의 글자 입력
+	myCustumBtn.setTitle("버튼입니다", for: .normal)
+	
+	//myCustumBtn의 normal 상태의 글자색 지정
+	myCustumBtn.setTitleColor(.red, for: .normal)
+	
+	//myCustumBtn의 normal 상태의 버튼의 배경 지정
+	myCustumBtn.setBackgroundImage(
+		UIImage(named:"Logo.jpeg"), 
+		for: UIControlState.normal)
+		
+	//myCustumBtn의 selected 상태의 글자 입력
+	myCustumBtn.setTitle("누른상태입니다.", for: .selected)
+	
+	//myCustumBtn의 selected 상태의 글자색 지정
+	myCustumBtn.setTitleColor(.black, for: .selected)
+	
+	//myCustumBtn의 글자 폰트 지정
+	myCustumBtn.titleLabel?.font = UIFont.systemFont(ofSize: 30)
+	
+	//myCustumBtn의 배경색 지정
+	myCustumBtn.backgroundColor = .black
+	
+	//touchUpInside 이벤트 발생시 self의 self.clickEvent실행
+	myCustumBtn.addTarget(self, action:
+		#selector(self.clickEvent(_:)),
+		 for: .touchUpInside)
+		 
+	//myCustumBtn의 isEnabled속성 true
+	myCustumBtn.isEnabled = true
+	
+	//root뷰위에 myCustumBtn을 addSubview
+	self.view.addSubview(myCustumBtn)
+    }
+
+//touchUpInside 이벤트 발생 시 버튼의 isSelected 상태를 바꿔준다
+@objc func clickEvent(_ sender : UIButton) {
+	if sender.isSelected {
+		sender.isSelected = false
+	} else {
+		sender.isSelected = true
+	}
+}
+~~~
