@@ -111,17 +111,19 @@
 
 ## 3. Study
 
->- [여러가지 함수 사용법](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
+>- [Method](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
 >
->- [계산기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/Cal/Cal/ViewController.swift)
+>- [Calculator](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/Cal/Cal/ViewController.swift)
 >
->- [숫자야구](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BaseballGame/BaseballGame/ViewController.swift)
+>- [Number Baseball](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BaseballGame/BaseballGame/ViewController.swift)
 >
->- [FrameBase를 이용한 계산기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/Calculator3/Calculator3/ViewController.swift)
+>- [FrameBase]
 >
->- [FrameBase를 이용한 자판기](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Study/UIExam)
+>- [Calculator](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/Calculator3/Calculator3/ViewController.swift)
 >
->- [FrameBase를 이용한 블랙잭](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Study/UIExam)
+>- [Vending Machine](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Study/UIExam)
+>
+>- [BlackJack](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/BlackJack)
 <br><br>
 
 ## 4. Contact Information
