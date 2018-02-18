@@ -25,7 +25,7 @@
 
 >- [Git](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/GIT/readme.md)
 >
->- [Object-Oriented](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/ObjectOriented%20Programming)
+>- [Object-Oriented](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/ObjectOriented%20Programming/readme.md)
 
 - **[2 week]**
 
@@ -58,9 +58,9 @@
 >
 >- [UILabel](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UILabel/readme.md)
 >
->- [UIImageView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIImageView)
+>- [UIImageView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIImageView/readme.md)
 >
->- [UIButton](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIButton)
+>- [UIButton](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIButton/readme.md)
 
 - **[5 week]**
 
@@ -117,9 +117,11 @@
 >
 >- [숫자야구](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BaseballGame/BaseballGame/ViewController.swift)
 >
->- [FrameBase를 이용한 계산기 만들기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/Calculator3/Calculator3/ViewController.swift)
+>- [FrameBase를 이용한 계산기](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/Calculator3/Calculator3/ViewController.swift)
 >
->- [자판기 만들기](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Study/UIExam)
+>- [FrameBase를 이용한 자판기](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Study/UIExam)
+>
+>- [FrameBase를 이용한 블랙잭](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Study/UIExam)
 <br><br>
 
 ## 4. Contact Information

@@ -24,10 +24,9 @@ open func addTarget(_ target: Any?,
 ~~~
 
 ## 3. UIButton
-- 버튼 클릭시 발생하는 UIControl의 이벤트에 대한 응답을 실행하는 컨트롤러
+- 사용자의 이벤트를 받아 처리해주는 UI
 
 ## 4. UIButton 구조
-- 사용자의 이벤트를 받아 처리해주는 UI
 <img src="ex1.png" width="100%">
 - 버튼 구조 : Title, Image, backgroundImage
 
