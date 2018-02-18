@@ -80,7 +80,15 @@ class ViewController: UIViewController {
         }
         return count <= 11 && aceCount ? count + 10 : count
     }
-    
+    func blackJack(cards : Card) -> Bool {
+        var count : Int = 0
+        for card in cards.cardCollection {
+            if card.isSelected {
+                count += 1
+            }
+        }
+        return count == 2 && cardCounting(cards: cards) == 21 ? true : false
+    }
     
     /// 카드한장을 추가로 받아오며 받은 카드가 21이 넘을 때 Bust가 되므로
     /// 자동으로 clickStand 함수를 호출하여 결과를 호출
@@ -131,7 +139,7 @@ class ViewController: UIViewController {
         dillerCount = cardCounting(cards: diller) < 22 ? cardCounting(cards: diller) : 0
         
         //user와 diller의 카운트 값을 비교하고 중앙 레이블의 텍스트 값을 변경시켜서 승리의 유무와 블랙잭일시 알려준다.
-        if  userCount < dillerCount && dillerCount == 21 {
+        if  userCount < dillerCount && blackJack(cards: diller) {
             resultLB.centerLB.text =
                                         """
                                         Diller
@@ -141,7 +149,7 @@ class ViewController: UIViewController {
         else if userCount < dillerCount  {
             resultLB.centerLB.text = "Lose !!"
         }
-        else if userCount > dillerCount && userCount == 21 {
+        else if userCount > dillerCount && blackJack(cards: user) {
             resultLB.centerLB.text =
                                         """
                                         User
