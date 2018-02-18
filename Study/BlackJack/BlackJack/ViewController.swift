@@ -78,7 +78,7 @@ class ViewController: UIViewController {
                 count += card.tag
             }
         }
-        return count <= 10 && aceCount ? count + 10 : count
+        return count <= 11 && aceCount ? count + 10 : count
     }
     
     
