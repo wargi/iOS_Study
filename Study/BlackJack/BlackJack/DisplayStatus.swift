@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StatusDisplay: UIView {
+class DisplayStatus: UIView {
 
     //레이블 생성
     var nameLB : UILabel!

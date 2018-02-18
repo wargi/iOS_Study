@@ -19,7 +19,8 @@
 ## 3. 코드
 ViewController를 제외하고 4개의 클래스를 생성하였습니다.
 
-- [카드생성클래스](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/Card.swift)
-- [화면버튼클래스](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/DisplayButton.swift)
-- [중앙레이블클래스](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/StateLB.swift)
-- [백그라운드 이미지 클래스](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/BackView.swift)
+- [BackImg](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/BackView.swift)
+- [Card](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/Card.swift)
+- [DisplayButton](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/DisplayButton.swift)
+- [DisplayStatus](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/StateLB.swift)
+- [ViewController](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BlackJack/BlackJack/ViewController.swift)

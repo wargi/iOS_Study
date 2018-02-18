@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E22F9D320369D7B00025337 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22F9D220369D7B00025337 /* BackView.swift */; };
+		8E22F9D320369D7B00025337 /* BackImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22F9D220369D7B00025337 /* BackImg.swift */; };
 		8E22F9D520369DB000025337 /* backImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E22F9D420369DAF00025337 /* backImg.jpg */; };
 		8E22F9D72036CB9500025337 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22F9D62036CB9500025337 /* Card.swift */; };
-		8E22F9DB20383ECB00025337 /* StatusDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22F9DA20383ECB00025337 /* StatusDisplay.swift */; };
+		8E22F9DB20383ECB00025337 /* DisplayStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22F9DA20383ECB00025337 /* DisplayStatus.swift */; };
 		8E22F9DD2038537900025337 /* DisplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22F9DC2038537900025337 /* DisplayButton.swift */; };
 		8E9220FC203510E60062E351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9220FB203510E60062E351 /* AppDelegate.swift */; };
 		8E9220FE203510E60062E351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9220FD203510E60062E351 /* ViewController.swift */; };
@@ -34,10 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E22F9D220369D7B00025337 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		8E22F9D220369D7B00025337 /* BackImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackImg.swift; sourceTree = "<group>"; };
 		8E22F9D420369DAF00025337 /* backImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backImg.jpg; sourceTree = "<group>"; };
 		8E22F9D62036CB9500025337 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		8E22F9DA20383ECB00025337 /* StatusDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDisplay.swift; sourceTree = "<group>"; };
+		8E22F9DA20383ECB00025337 /* DisplayStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStatus.swift; sourceTree = "<group>"; };
 		8E22F9DC2038537900025337 /* DisplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayButton.swift; sourceTree = "<group>"; };
 		8E9220F8203510E60062E351 /* BlackJack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9220FB203510E60062E351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,11 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				8E9220FB203510E60062E351 /* AppDelegate.swift */,
-				8E9220FD203510E60062E351 /* ViewController.swift */,
-				8E22F9DC2038537900025337 /* DisplayButton.swift */,
-				8E22F9DA20383ECB00025337 /* StatusDisplay.swift */,
+				8E22F9D220369D7B00025337 /* BackImg.swift */,
 				8E22F9D62036CB9500025337 /* Card.swift */,
-				8E22F9D220369D7B00025337 /* BackView.swift */,
+				8E22F9DC2038537900025337 /* DisplayButton.swift */,
+				8E22F9DA20383ECB00025337 /* DisplayStatus.swift */,
+				8E9220FD203510E60062E351 /* ViewController.swift */,
 				8E22F9D420369DAF00025337 /* backImg.jpg */,
 				8E922119203512140062E351 /* back.png */,
 				8E922111203512130062E351 /* ace_of_spades.png */,
@@ -208,11 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E22F9D320369D7B00025337 /* BackView.swift in Sources */,
+				8E22F9D320369D7B00025337 /* BackImg.swift in Sources */,
 				8E9220FE203510E60062E351 /* ViewController.swift in Sources */,
 				8E9220FC203510E60062E351 /* AppDelegate.swift in Sources */,
 				8E22F9DD2038537900025337 /* DisplayButton.swift in Sources */,
-				8E22F9DB20383ECB00025337 /* StatusDisplay.swift in Sources */,
+				8E22F9DB20383ECB00025337 /* DisplayStatus.swift in Sources */,
 				8E22F9D72036CB9500025337 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

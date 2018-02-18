@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     //객체 생성
-    var background : BackView!
+    var background : BackImg!
     var user : Card!
     var diller : Card!
-    var userStatus : StatusDisplay!
-    var dillerStatus : StatusDisplay!
-    var centerStatus : StatusDisplay!
+    var userName : DisplayStatus!
+    var dillerName : DisplayStatus!
+    var resultLB : DisplayStatus!
     var userBtn : DisplayButton!
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
     func create() {
         //백그라운드 이미지 로드
-        background = BackView(frame: self.view.bounds)
+        background = BackImg(frame: self.view.bounds)
         view.addSubview(background)
         
         //유저 카드 초기화 및 프레임 설정
@@ -36,21 +36,21 @@ class ViewController: UIViewController {
         self.view.addSubview(user)
         
         //유저 상태창 초기화 및 프레임 설정
-        userStatus = StatusDisplay(frame: CGRect(x: 0, y: view.bounds.height - 195, width: view.bounds.width, height: 50), name: "User")
-        self.view.addSubview(userStatus)
+        userName = DisplayStatus(frame: CGRect(x: 0, y: view.bounds.height - 195, width: view.bounds.width, height: 50), name: "User")
+        self.view.addSubview(userName)
         
         //딜러 카드 초기화 및 프레임 설정
         diller = Card(frame: CGRect(x: (view.bounds.width / 2) - 195, y: 50, width: 390, height: 100), diller: true)
         self.view.addSubview(diller)
         
         //딜러 상태창 초기화 및 프레임 설정
-        dillerStatus = StatusDisplay(frame: CGRect(x: 0, y: diller.frame.maxY + 15, width: view.bounds.width, height: 50), name: "Diller")
-        self.view.addSubview(dillerStatus)
+        dillerName = DisplayStatus(frame: CGRect(x: 0, y: diller.frame.maxY + 15, width: view.bounds.width, height: 50), name: "Diller")
+        self.view.addSubview(dillerName)
         
         //중앙 레이블 초기화 및 프레임 설정
-        centerStatus = StatusDisplay(frame: CGRect(x: (view.bounds.width / 2) - 150, y: (view.bounds.height / 2) - 150, width: 300, height: 300))
-        centerStatus.centerCreate()
-        self.view.addSubview(centerStatus)
+        resultLB = DisplayStatus(frame: CGRect(x: (view.bounds.width / 2) - 150, y: (view.bounds.height / 2) - 150, width: 300, height: 300))
+        resultLB.centerCreate()
+        self.view.addSubview(resultLB)
         
         //Diplay Button 초기화 및 프레임 설정
         userBtn = DisplayButton(frame: CGRect(x: (view.bounds.width / 2) - 140, y: view.bounds.height - 205, width: 320, height: 50))
@@ -69,17 +69,16 @@ class ViewController: UIViewController {
     /// - Returns: count
     func cardCounting(cards : Card) -> Int{
         var count : Int = 0
+        var aceCount : Bool = false
         for card in cards.cardCollection {
             if card.isSelected {
-                if card.tag == 1 && count <= 10{
-                    count += 11
+                if card.tag == 1 {
+                    aceCount = true
                 }
-                else {
-                    count += card.tag
-                }
+                count += card.tag
             }
         }
-        return count
+        return count <= 10 && aceCount ? count + 10 : count
     }
     
     
@@ -95,7 +94,7 @@ class ViewController: UIViewController {
             }
         }
         
-        //user의 카드 카운트가 hit로 인해 21이상으로 넘어가버릴 시에
+        //user의 카드 카운트가 hit로 인해 21을 초과시에
         //bust상태이므로 자동으로 Stand로 넘겨주고 히트버튼을 비활성화한다
         if cardCounting(cards: user) > 21 {
             userBtn.hit.isUserInteractionEnabled = false
@@ -121,39 +120,39 @@ class ViewController: UIViewController {
         for card in diller.cardCollection {
             if card.isSelected == false {
                 card.isSelected = true
-                if cardCounting(cards: diller) >= 17 {
-                    break
-                }
+            }
+            if cardCounting(cards: diller) >= 17 {
+                break
             }
         }
         
-        //user와 diller의 카운트 값을 구하고 22이보다 카운트가 높을시에 버스트상탸로 변경시킨다.
+        //user와 diller의 카운트 값을 구하고 22이보다 카운트가 높을시에 버스트상태로 변경시킨다.
         userCount = cardCounting(cards: user) < 22 ? cardCounting(cards: user) : 0
         dillerCount = cardCounting(cards: diller) < 22 ? cardCounting(cards: diller) : 0
         
         //user와 diller의 카운트 값을 비교하고 중앙 레이블의 텍스트 값을 변경시켜서 승리의 유무와 블랙잭일시 알려준다.
         if  userCount < dillerCount && dillerCount == 21 {
-            centerStatus.centerLB.text =
+            resultLB.centerLB.text =
                                         """
                                         Diller
                                         BlackJack !!
                                         """
         }
         else if userCount < dillerCount  {
-            centerStatus.centerLB.text = "Lose !!"
+            resultLB.centerLB.text = "Lose !!"
         }
         else if userCount > dillerCount && userCount == 21 {
-            centerStatus.centerLB.text =
+            resultLB.centerLB.text =
                                         """
                                         User
                                         BlackJack !!
                                         """
         }
         else if userCount > dillerCount {
-            centerStatus.centerLB.text = "Win !!"
+            resultLB.centerLB.text = "Win !!"
         }
         else {
-            centerStatus.centerLB.text = "Draw !!"
+            resultLB.centerLB.text = "Draw !!"
         }
         
         //경기가 종료된 후에 버튼을 비활성화

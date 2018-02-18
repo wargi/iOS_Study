@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BackView: UIImageView {
+class BackImg: UIImageView {
     
     //블랙잭 배경화면 설정
     override init(frame: CGRect) {
