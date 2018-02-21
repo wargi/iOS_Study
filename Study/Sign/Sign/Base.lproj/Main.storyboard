@@ -69,7 +69,7 @@
         <!--Navigation Controller-->
         <scene sceneID="MBE-ad-nXj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ajQ-Er-duC" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NextNavigaition" automaticallyAdjustsScrollViewInsets="NO" id="ajQ-Er-duC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R4f-gR-X8p">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

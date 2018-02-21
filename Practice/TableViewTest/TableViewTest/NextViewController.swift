@@ -10,26 +10,26 @@ import UIKit
 
 class NextViewController: UIViewController {
 
+    let nextLB = UIButton()
+    var text:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        nextLB.frame = CGRect(x: (view.bounds.width / 2) - 50, y: (view.bounds.height / 2) - 50, width: 100, height: 100)
+        nextLB.titleLabel?.textAlignment = .center
+        nextLB.setTitle(text, for: .normal)
+        nextLB.setTitleColor(.black, for: .normal)
+        nextLB.layer.borderWidth = 1
+        nextLB.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        nextLB.addTarget(self, action: #selector(self.clickedEvent(_:)), for: .touchUpInside)
+        view.addSubview(nextLB)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func clickedEvent(_ sender : UIButton) {
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ViewControllerNext") as! ViewControllerNext
+        self.navigationController?.pushViewController(nextVC, animated: true)
+        
     }
-    */
-
+    
 }

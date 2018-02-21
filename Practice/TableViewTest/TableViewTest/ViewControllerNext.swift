@@ -8,28 +8,35 @@
 
 import UIKit
 
-class ViewControllerNext: UIViewController {
+class ViewControllerNext: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var animalsList : [String] = ["오리","강아지","너구리","하마","호랑이","토끼","사자","코뿔소","코끼리","기린"]
+    @IBOutlet var tableView:UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(tableView)
 
         // Do any additional setup after loading the view.
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return animalsList.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
+        cell.textLabel?.text = animalsList[indexPath.row]
+        return cell
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

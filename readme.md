@@ -64,7 +64,7 @@
 
 - **[5 week]**
 
->- [LifeCycle]()
+>- [LifeCycle](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/LifeCycle/readme.md)
 >
 >- [Delegate Pattern]()
 >
