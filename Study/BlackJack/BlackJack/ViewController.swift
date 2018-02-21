@@ -138,6 +138,14 @@ class ViewController: UIViewController {
         userCount = cardCounting(cards: user) < 22 ? cardCounting(cards: user) : 0
         dillerCount = cardCounting(cards: diller) < 22 ? cardCounting(cards: diller) : 0
         
+//        UIView.animate(withDuration: 0.3,
+//            animations: {
+//
+//
+//        }) { (<#Bool#>) in
+//            <#code#>
+//        }
+        
         //user와 diller의 카운트 값을 비교하고 중앙 레이블의 텍스트 값을 변경시켜서 승리의 유무와 블랙잭일시 알려준다.
         if  userCount < dillerCount && blackJack(cards: diller) {
             resultLB.centerLB.text =

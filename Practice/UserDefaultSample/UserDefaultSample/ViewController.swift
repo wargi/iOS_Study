@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func addAction(_ sender: Any) {
         
-        var listArray = UserDefaults.standard.array(forKey: key) as? [Dictionary<String, String>]
+        var listArray = UserDefaults.standard.array(forKey: key) as? [String:String]
         if var list = UserDefaults.standard.dictionary(forKey: key) as? [String : String] {
             list = [firstTF.text! : mainTF.text!]
 //            listArray.append(list)
