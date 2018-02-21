@@ -11,30 +11,33 @@
 3. Main Event Loop를 실행(touch, text input등 유저의 액션을 받는 루프) 및 기타 설정
 
 ### 1-2. UIApplication
-UIApplication 객체는 싱글톤 객체(앱 전체에 하나만 존재)이며 Event Loop에서 발생하는 여러 이벤트들을 감지하고 Delegate에 전달하는 역할을 합니다.
+UIApplication 객체는 싱글톤(앱 전체에 하나만 존재) 객체이며 Event Loop에서 발생하는 여러 이벤트들을 감지하고 Delegate에 전달하는 역할을 합니다.
 
 > 예시) 어플리케이션이 백그라운드로 갈때나 메모리 부족 경고를 할 때와 같은 상황들을 감지하여 Delegate에 전달하는 역할 
 
-### 1-3. AppDelegate
+### 1-3. Application 실행상태
+1. Not Running: 앱이 실행되지 않은 상태
+(Inactive와 Active 상태를 합쳐서 Foreground 라고 함)
+2. Inactive: 앱이 실행중인 상태 그러나 아무런 이벤트를 받지 않는 상태
+3. Active: 앱이 실행중이며 이벤트가 발생한 상태
+4. Background: 앱이 백그라운드에 있는 상태 그러나 실행되는 코드가 있는 상태
+5. Suspened: 앱이 백그라운드에 있고 실행되는 코드가 없는 상태
+
+### 1-4. AppDelegate
 1. Xcode로 Swift 프로젝트를 만들면 AppDelegate.swift 파일을 자동으로 생성
 2. AppDelegate.swift 파일에는 앱의 상태에 따라 실행되는 함수들이 정의.
 3. AppDelegate.swift 파일을 열어보면 클래스 선언부에 @UIApplicationMain 어노테이션이 붙어 있는걸 볼 수 있습니다.
 4. 앱이 구동되면 AppDelegate.swift의 AppDelegate 클래스를 델리게이트 객체로 지정
-5. AppDelegate.swift 파일이 AppDelegate 객체가 된다.
-6. 정의된 함수들을 보기에 앞서 앱의 실행 상태는 5개 상태로 구분 될 수 있고 아래와 같습니다.
 
-~~~
-<앱의 실행 상태 5가지>
-Not Running: 앱이 실행되지 않은 상태
-(Inactive와 Active 상태를 합쳐서 Foreground 라고 함)
-Inactive: 앱이 실행중인 상태 그러나 아무런 이벤트를 받지 않는 상태
-Active: 앱이 실행중이며 이벤트가 발생한 상태
-Background: 앱이 백그라운드에 있는 상태 그러나 실행되는 코드가 있는 상태
-Suspened: 앱이 백그라운드에 있고 실행되는 코드가 없는 상태
-~~~
-
-### 1-4 AppDelegate Method
+### 1-5 AppDelegate Method
 ~~~swift
+/*
+아래의 함수를 모두 구현 할 필요는 없고 
+상황에 맞춰 필요한 함수만 구현하여도 됩니다. 
+혹은 아래 함수들에는 없지만 원하는 delegate를
+추가할 수 도 있습니다.
+*/
+
 //앱이 처음 시작될 때 실행
 application(_:didFinishLaunching:)
 
@@ -53,13 +56,6 @@ applicationDidBecomeActive:
 
 //앱이 종료될 때 실행
 applicationWillTerminate:
-
-/*
-위의 함수를 모두 구현 할 필요는 없고 
-상황에 맞춰 필요한 함수만 구현하여도 됩니다. 
-혹은 위 함수들에는 없지만 원하는 delegate를
-추가할 수 도 있습니다.
-*/
 ~~~
 
 ## 2. ViewController LifeCycle
