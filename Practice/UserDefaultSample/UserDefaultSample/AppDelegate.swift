@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  UserDefaultSample
 //
-//  Created by 박소정 on 2018. 2. 9..
+//  Created by 박상욱 on 2018. 2. 9..
 //  Copyright © 2018년 sangwook park. All rights reserved.
 //
 

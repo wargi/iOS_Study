@@ -2,37 +2,58 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UserInformation</key>
+	<key>albumInfo</key>
+	<dict>
+		<key>albumTitle</key>
+		<string>2집 Oh!</string>
+		<key>artist</key>
+		<string>소녀시대</string>
+		<key>genre</key>
+		<string>댄스</string>
+	</dict>
+	<key>songList</key>
 	<array>
 		<dict>
-			<key>Name</key>
-			<string>Sejun</string>
-			<key>PassWord</key>
-			<string>1234</string>
+			<key>songTitle</key>
+			<string>Oh!</string>
+			<key>trackNum</key>
+			<integer>1</integer>
+			<key>artist</key>
+			<string>소녀시대</string>
+			<key>writer</key>
+			<string>김정배</string>
+			<key>playTime</key>
+			<integer>12340</integer>
+			<key>playURL</key>
+			<string>http://music.naver.com/123</string>
 		</dict>
 		<dict>
-			<key>Name</key>
-			<string>Sejun</string>
-			<key>PassWord</key>
-			<string>1234</string>
+			<key>songTitle</key>
+			<string>Show! Show! Show!</string>
+			<key>trackNum</key>
+			<integer>2</integer>
+			<key>artist</key>
+			<string>소녀시대</string>
+			<key>writer</key>
+			<string>김부민</string>
+			<key>playTime</key>
+			<integer>10130</integer>
+			<key>playURL</key>
+			<string>http://music.naver.com/124</string>
 		</dict>
 		<dict>
-			<key>Name</key>
-			<string>Sejun</string>
-			<key>PassWord</key>
-			<string>1234</string>
-		</dict>
-		<dict>
-			<key>Name</key>
-			<string>Sejun</string>
-			<key>PassWord</key>
-			<string>1234</string>
-		</dict>
-		<dict>
-			<key>Name</key>
-			<string>Sejun</string>
-			<key>PassWord</key>
-			<string>1234</string>
+			<key>songTitle</key>
+			<string>웃자 (Be Happy)</string>
+			<key>trackNum</key>
+			<integer>4</integer>
+			<key>artist</key>
+			<string>소녀시대</string>
+			<key>writer</key>
+			<string>아트라이브</string>
+			<key>playTime</key>
+			<integer>12134</integer>
+			<key>playURL</key>
+			<string>http://music.naver.com/126</string>
 		</dict>
 	</array>
 </dict>
