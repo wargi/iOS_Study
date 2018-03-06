@@ -29,7 +29,7 @@ class SettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell2")
         cell?.textLabel?.text = setting[indexPath.section].dataList[indexPath.row].content
-        cell.setting
+//        cell.setting
         
         return cell!
     }

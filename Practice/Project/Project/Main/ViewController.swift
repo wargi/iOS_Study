@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     lazy var friendList:[UserModel] = MainDataCenter.sharedInstance.friendListModel
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
