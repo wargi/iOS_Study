@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 //        let userList = NSDictionary(contentsOfFile: path!)
 //        print(userList!)
         let loadDataDic = loadPlistData(fileName: "UserList")
-        print(loadDataDic!["albumInfo"] as! [String:String])
+//        print(loadDataDic!["albumInfo"] as! [String:String])
     }
     
     

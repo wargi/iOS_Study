@@ -19,6 +19,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        print(Bundle.main.bundlePath)
+        print(NSHomeDirectory())
         //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Setting", style: .plain, target: self, action: #selector(self.ClickedSetting(_:)))
     }
     
