@@ -16,11 +16,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let imgArr : [UIImage] = [UIImage(named: "one.jpeg")!, UIImage(named: "two.jpeg")!, UIImage(named: "three.jpeg")!, UIImage(named: "four.jpeg")!, UIImage(named: "five.jpeg")!]
     let topImgArr : [UIImage] = [UIImage(named: "JJ")!, UIImage(named: "ho")!, UIImage(named: "GithubLogo")!, UIImage(named: "Logo")!, UIImage(named: "YoutubeLogo")!]
     
-
+    
+    
     @IBOutlet var instar : UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationItem.title = "Instagram"
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,5 +53,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
 
+}
+
+extension UIStoryboard {
+    func instantiateViewController<T>(ofType type: T.Type) -> T {
+        
+        return instantiateViewController(withIdentifier: String(describing: type)) as! T
+    }
 }
 
