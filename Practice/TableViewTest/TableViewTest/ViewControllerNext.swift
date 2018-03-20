@@ -30,7 +30,7 @@ class ViewControllerNext: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: MyCustomCell.identifier, for: indexPath)
         cell.textLabel?.text = animalsList[indexPath.row]
         return cell
     }
@@ -40,3 +40,5 @@ class ViewControllerNext: UIViewController, UITableViewDelegate, UITableViewData
     }
 
 }
+
+

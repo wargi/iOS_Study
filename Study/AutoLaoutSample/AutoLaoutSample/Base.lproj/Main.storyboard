@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLaoutSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIX-Mu-auv">
+                                <rect key="frame" x="16" y="617" width="229" height="30"/>
+                                <state key="normal" title="Don't know your workspace URL?"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your-url.slack.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhF-08-CxE">
+                                <rect key="frame" x="16" y="364" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xbj-Pp-a1A">
+                                <rect key="frame" x="16" y="312.5" width="343" height="24"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vvC-q7-tFp"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Slack workspace URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="418-5Q-Qvs">
+                                <rect key="frame" x="16" y="284.5" width="343" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2I-Cc-yKj">
+                                <rect key="frame" x="313" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIj-Qq-Nlf">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KhF-08-CxE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="0tL-xL-YRB"/>
+                            <constraint firstItem="KhF-08-CxE" firstAttribute="leading" secondItem="Xbj-Pp-a1A" secondAttribute="leading" placeholder="YES" id="10A-xI-1Cy"/>
+                            <constraint firstItem="KhF-08-CxE" firstAttribute="centerY" secondItem="Xbj-Pp-a1A" secondAttribute="centerY" constant="50" placeholder="YES" id="9bB-0H-iwf"/>
+                            <constraint firstItem="Xbj-Pp-a1A" firstAttribute="top" secondItem="418-5Q-Qvs" secondAttribute="bottom" constant="10" id="Baf-h8-ZG2"/>
+                            <constraint firstItem="jIX-Mu-auv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="418-5Q-Qvs" secondAttribute="bottom" constant="120" id="FhG-vT-xcq"/>
+                            <constraint firstItem="418-5Q-Qvs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="YPQ-gv-Kmj"/>
+                            <constraint firstItem="Xbj-Pp-a1A" firstAttribute="leading" secondItem="418-5Q-Qvs" secondAttribute="leading" id="aer-Nb-9SQ"/>
+                            <constraint firstItem="KhF-08-CxE" firstAttribute="centerY" secondItem="Xbj-Pp-a1A" secondAttribute="centerY" priority="999" id="caC-iQ-fmb"/>
+                            <constraint firstItem="jIX-Mu-auv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dN6-vV-fyC"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jIX-Mu-auv" secondAttribute="trailing" constant="20" symbolic="YES" id="hcR-hY-7iF"/>
+                            <constraint firstItem="418-5Q-Qvs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kFp-5r-VxE"/>
+                            <constraint firstItem="Xbj-Pp-a1A" firstAttribute="trailing" secondItem="418-5Q-Qvs" secondAttribute="trailing" id="kHE-8g-8vs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jIX-Mu-auv" secondAttribute="bottom" constant="20" id="lMp-ay-MuQ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KhF-08-CxE" secondAttribute="trailing" constant="20" symbolic="YES" id="n2Z-aA-31t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="418-5Q-Qvs" secondAttribute="trailing" constant="16" id="z5f-TI-1mm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="U2I-Cc-yKj" id="cTk-LW-uTv"/>
+                        <outlet property="placeholderLabel" destination="KhF-08-CxE" id="eSj-F5-0IA"/>
+                        <outlet property="txt" destination="Xbj-Pp-a1A" id="4xS-Wc-Onf"/>
+                        <outlet property="view" destination="jIX-Mu-auv" id="1q9-AA-Aw7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

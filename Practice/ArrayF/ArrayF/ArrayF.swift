@@ -10,6 +10,7 @@ import Foundation
 
 class ArrayF
 {
+    //MARK: 하하
     //배열의 선언 및 기능 테스트
     func arrayTest1()
     {
@@ -27,11 +28,12 @@ class ArrayF
         }
     }
     
+    //MARK: 호호
     //배열의 선언 및 기능 테스트2
     func arrayTest2()
     {
         var intArray : [Int] = [1,2,3,4]
-        
+      
         print("\(intArray.count)")
         print("\(intArray.isEmpty)")
         
@@ -46,6 +48,7 @@ class ArrayF
         print("\n")
     }
     
+    //MARK: Set 선언
     //set의 선언 및 기능 테스트
     func setTest()
     {

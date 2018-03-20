@@ -10,12 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
+        
         var arra : [Int] = [1,2,1,2,3]
         let arr : ArrayF = ArrayF()
         arr.arrayTest1()
+
         arr.arrayTest2()
         arr.setTest()
         arr.dictionaryTest()
@@ -30,11 +41,12 @@ class ViewController: UIViewController {
         print(arrA)
         }
 
+    //MARK: Hi
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
 
