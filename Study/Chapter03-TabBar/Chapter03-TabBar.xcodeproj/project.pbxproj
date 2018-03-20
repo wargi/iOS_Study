@@ -27,6 +27,7 @@
 		8E2E0D05205FD3BB000B713D /* rss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2E0CF8205FD3BB000B713D /* rss@2x.png */; };
 		8E2E0D06205FD3BB000B713D /* homes_119.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2E0CF9205FD3BB000B713D /* homes_119.png */; };
 		8E2E0D07205FD3BB000B713D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2E0CFA205FD3BB000B713D /* calendar.png */; };
+		8E2E0D09205FE971000B713D /* NewAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E0D08205FE971000B713D /* NewAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8E2E0CF8205FD3BB000B713D /* rss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rss@2x.png"; path = "../../../../../../Downloads/Swift-Practice-master/Chapter03/Chapter03-TabBar/rss@2x.png"; sourceTree = "<group>"; };
 		8E2E0CF9205FD3BB000B713D /* homes_119.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homes_119.png; path = "../../../../../../Downloads/Swift-Practice-master/Chapter03/Chapter03-TabBar/homes_119.png"; sourceTree = "<group>"; };
 		8E2E0CFA205FD3BB000B713D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = "../../../../../../Downloads/Swift-Practice-master/Chapter03/Chapter03-TabBar/calendar.png"; sourceTree = "<group>"; };
+		8E2E0D08205FE971000B713D /* NewAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8E2E0CD7205FCEF6000B713D /* AppDelegate.swift */,
+				8E2E0D08205FE971000B713D /* NewAppDelegate.swift */,
 				8E2E0CED205FD300000B713D /* Resources */,
 				8E2E0CD9205FCEF6000B713D /* ViewController.swift */,
 				8E2E0CE9205FCFB6000B713D /* SecondViewController.swift */,
@@ -205,6 +208,7 @@
 				8E2E0CEA205FCFB6000B713D /* SecondViewController.swift in Sources */,
 				8E2E0CDA205FCEF6000B713D /* ViewController.swift in Sources */,
 				8E2E0CEC205FCFCB000B713D /* ThirdViewController.swift in Sources */,
+				8E2E0D09205FE971000B713D /* NewAppDelegate.swift in Sources */,
 				8E2E0CD8205FCEF6000B713D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,6 @@
 
 import UIKit
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -33,8 +32,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 for tbItem in tbItems {
                     let img = UIImage(named: "checkmark")?.withRenderingMode(.alwaysOriginal)
                     tbItem.selectedImage = img
+//                    tbItem.setTitleTextAttributes([NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue):
+//                        UIColor.gray], for: .disabled)
+//                    tbItem.setTitleTextAttributes([NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue):
+//                        UIColor.red], for: .selected)
+//                    tbItem.setTitleTextAttributes([NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue):
+//                        UIFont.systemFont(ofSize: 15)], for: .normal)
                 }
+                let tbItemProxy = UITabBarItem.appearance()
                 
+                tbItemProxy.setTitleTextAttributes([NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): UIColor.red], for: .selected)
+                tbItemProxy.setTitleTextAttributes([NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): UIColor.gray], for: .disabled)
+                tbItemProxy.setTitleTextAttributes([NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): UIFont.systemFont(ofSize: 15)], for: .normal)
                 tbItems[0].title = "Calendar"
                 tbItems[1].title = "File"
                 tbItems[2].title = "Photo"
