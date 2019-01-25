@@ -15,7 +15,7 @@
 ## 1. About Me
 
 >- 컴퓨터공학과 재학 중(19년 2월 졸업 예정)
->- FastCampus IOS개발 스쿨 수강 중(18년 4월 수료 예정)
+>- FastCampus IOS개발 스쿨 수강 중(18년 4월 수료)
 
 <br>
 
@@ -130,5 +130,5 @@
 
 > - E-mail : wkahdla12346@gmail.com
 >
-> - Phone : 010-22249-1665
+> - Phone : 010-2249-1665
 
