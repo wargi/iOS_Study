@@ -14,7 +14,8 @@
 
 ## 1. About Me
 
->- FastCampus IOS개발 스쿨 수료(2018.04.)
+>- FastCampus iOS개발 스쿨 수료 (2018.04.)
+>- Over Eats(Uber Eats 카피캣 2018.05.) 
 >- 어디주유 개발(2018.09.)
 >- 컴퓨터공학과 졸업 (2019.02.)
 
