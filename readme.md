@@ -56,10 +56,10 @@
 >- <Handling Image and Color>**
 > 1. [UIImageView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIImageView/readme.md)
 >- **Handling Text and Font**
->  1. [UILabel](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UILabel/readme.md)
->  2. [Text Field]()
->  3. [Text View]()
->  4. [Text Input Traits]()
+>  1. [UILabel]([https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/UILabel](https://github.com/wargi/iOS_Study/tree/master/Class/Handling Text and Font/UILabel))
+>  2. [Text Field]([https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/UILabel](https://github.com/wargi/iOS_Study/tree/master/Class/Handling Text and Font/UILabel))
+>  3. [Text View]([https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/UILabel](https://github.com/wargi/iOS_Study/tree/master/Class/Handling Text and Font/UILabel))
+>  4. [Text Input Traits]([https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/UILabel](https://github.com/wargi/iOS_Study/tree/master/Class/Handling Text and Font/UILabel))
 >- 
 >- [LifeCycle](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/LifeCycle/readme.md)
 
