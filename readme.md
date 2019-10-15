@@ -58,9 +58,13 @@
 > 1. [UIImageView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIImageView/readme.md)
 >- **Handling Text and Font**
 >  1. [UILabel](https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/UILabel/readme.md)
->  2. [Text Field]()
->  3. [Text View]()
->  4. [Text Input Traits]()
+>  2. [Text Field](https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/TextField.md)
+>  3. [Text View](https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/TextView.md)
+>  4. [Text Input Traits](https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/TextInputTraits.md)
+>  5. [Software Keyboard](https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/SoftwareKeyboard.md)
+>  6. [Text Delegate](https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/TextDekegates.md)
+>  7. [Input View & Input Accessory View](https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/Input.md)
+>  8. [Password AutoFill](https://github.com/wargi/iOS_Study/tree/master/Class/Handling%20Text%20and%20Font/Password.md)
 >- 
 >- [LifeCycle](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/LifeCycle/readme.md)
 
