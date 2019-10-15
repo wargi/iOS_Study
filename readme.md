@@ -47,15 +47,15 @@
 - **[iOS]**
 
 >- [FrameWork](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/FrameWork/readme.md)
->- **<View & Window>**
+>- **View & Window**
 > 1. [UIView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIView/readme.md)
->- **<System View & Control>**
+>- **System View & Control**
 > 1. 
 > 2. [UIButton](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIButton/readme.md)
 >
 >- <Handling Image and Color>**
 > 1. [UIImageView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIImageView/readme.md)
->- **<Handling Text and Font>**
+>- **Handling Text and Font**
 >  1. [UILabel](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UILabel/readme.md)
 >  2. [Text Field]()
 >  3. [Text View]()
