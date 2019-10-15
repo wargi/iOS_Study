@@ -5,7 +5,7 @@
 - 앱 생명주기는 홈버튼을 눌렀을때, 전화가 왔을때와 같이 앱이 화면상에서 보이지 않는 background 상태, 화면에 올라와 있는 상태인 foreground 등과 같은 상태들을 정의한 것 입니다.
 - 제대로 된 앱을 만들기 위해서는 다양한 상황에서도 적절하게 대응해야 하기 때문에 앱 생명주기를 이해하는 것은 중요합니다.
 
-### 1-1. Application Execution
+### 1-1. Application Executiona
 1. UIApplication 객체를 생성
 2. @UIApplicationMain 어노테이션이 있는 클래스를 찾아 AppDelegate 객체를 생성
 3. Main Event Loop를 실행(touch, text input등 유저의 액션을 받는 루프) 및 기타 설정
