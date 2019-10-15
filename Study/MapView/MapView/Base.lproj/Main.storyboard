@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZgF-3L-f0q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="K0e-FD-twl">
+            <objects>
+                <navigationController id="ZgF-3L-f0q" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cS2-Z6-trW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fs6-p2-HA8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="745-Ra-hyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-582" y="133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tpB-Ws-SoC">
+                                <rect key="frame" x="0.0" y="264" width="375" height="403"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-Nu-pec">
+                                <rect key="frame" x="132" y="233" width="110" height="200"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH4-Yi-DT7">
+                                <rect key="frame" x="10" y="84" width="355" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BBj-ex-rpR">
+                                <rect key="frame" x="20" y="114" width="335" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMv-aq-Ls2">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="30"/>
+                                        <state key="normal" title="센터핀추가"/>
+                                        <connections>
+                                            <action selector="addAnnotationAtCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGu-fw-tde"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-3w-FFl">
+                                        <rect key="frame" x="86.5" y="0.0" width="76" height="30"/>
+                                        <state key="normal" title="남산핀추가"/>
+                                        <connections>
+                                            <action selector="addAnnotationAtNamsan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6E-ta-Yff"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMN-UG-QyZ">
+                                        <rect key="frame" x="172.5" y="0.0" width="76.5" height="30"/>
+                                        <state key="normal" title="핀 제거"/>
+                                        <connections>
+                                            <action selector="removeAllAnnotations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0k-xN-AUy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP9-vG-rai">
+                                        <rect key="frame" x="259" y="0.0" width="76" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Do Nothing"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NH1-nF-Q1Y">
+                                <rect key="frame" x="20" y="171" width="335" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDU-jf-lw1">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="30"/>
+                                        <state key="normal" title="업데이트"/>
+                                        <connections>
+                                            <action selector="updateCurrentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNp-kS-5F8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUn-7W-fXy">
+                                        <rect key="frame" x="86.5" y="0.0" width="76" height="30"/>
+                                        <state key="normal" title="추적 중단"/>
+                                        <connections>
+                                            <action selector="stopUpdatingLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbM-jK-oMS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJE-bt-4Vc">
+                                        <rect key="frame" x="172.5" y="0.0" width="76.5" height="30"/>
+                                        <state key="normal" title="추적 시작"/>
+                                        <connections>
+                                            <action selector="startUpdatingLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aoo-eh-aaT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-NG-MNo">
+                                        <rect key="frame" x="259" y="0.0" width="76" height="30"/>
+                                        <state key="normal" title="초기 위치로"/>
+                                        <connections>
+                                            <action selector="moveToInitialCoordinate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2a-OO-xwR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tpB-Ws-SoC" secondAttribute="trailing" id="5rF-oM-Xwj"/>
+                            <constraint firstItem="tpB-Ws-SoC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9cI-xM-rdk"/>
+                            <constraint firstItem="F0P-Nu-pec" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hv7-AD-HPK"/>
+                            <constraint firstItem="mH4-Yi-DT7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="JGp-Di-zuQ"/>
+                            <constraint firstItem="F0P-Nu-pec" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Mdl-Nx-QvS"/>
+                            <constraint firstItem="NH1-nF-Q1Y" firstAttribute="trailing" secondItem="BBj-ex-rpR" secondAttribute="trailing" id="PTg-VC-8no"/>
+                            <constraint firstItem="NH1-nF-Q1Y" firstAttribute="top" secondItem="BBj-ex-rpR" secondAttribute="bottom" constant="27" id="QGw-ZD-bz2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mH4-Yi-DT7" secondAttribute="trailing" constant="10" id="Ry8-Vd-vTR"/>
+                            <constraint firstItem="NH1-nF-Q1Y" firstAttribute="centerX" secondItem="F0P-Nu-pec" secondAttribute="centerX" id="VKD-By-95P"/>
+                            <constraint firstItem="BBj-ex-rpR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VTl-mJ-QFd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BBj-ex-rpR" secondAttribute="trailing" constant="20" id="XZc-mO-Y1n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tpB-Ws-SoC" secondAttribute="bottom" id="kxZ-rw-Wz4"/>
+                            <constraint firstItem="F0P-Nu-pec" firstAttribute="top" secondItem="NH1-nF-Q1Y" secondAttribute="bottom" constant="32" id="nqT-Qn-PrO"/>
+                            <constraint firstItem="tpB-Ws-SoC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="qUj-Bw-e0K"/>
+                            <constraint firstItem="BBj-ex-rpR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="qmS-tL-dUf"/>
+                            <constraint firstItem="mH4-Yi-DT7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="rgm-Yh-fJN"/>
+                            <constraint firstItem="NH1-nF-Q1Y" firstAttribute="leading" secondItem="BBj-ex-rpR" secondAttribute="leading" id="yRm-Yd-Jlh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PKV-a8-2QG"/>
+                    <connections>
+                        <outlet property="cordinateLabel" destination="mH4-Yi-DT7" id="yI9-hA-ORX"/>
+                        <outlet property="mapView" destination="tpB-Ws-SoC" id="he0-4C-F12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
