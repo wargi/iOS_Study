@@ -48,15 +48,19 @@
 
 >- [FrameWork](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/FrameWork/readme.md)
 >- **<View & Window>**
->  1. [UIView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIView/readme.md)
+> 1. [UIView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIView/readme.md)
 >- **<System View & Control>**
->  1. 
->  2. [UIButton](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIButton/readme.md)
+> 1. 
+> 2. [UIButton](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIButton/readme.md)
 >
 >- <Handling Image and Color>**
->  1. [UIImageView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIImageView/readme.md)
+> 1. [UIImageView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UIImageView/readme.md)
 >- **<Handling Text and Font>**
->- [UILabel](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UILabel/readme.md)
+>  1. [UILabel](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/UILabel/readme.md)
+>  2. [Text Field]()
+>  3. [Text View]()
+>  4. [Text Input Traits]()
+>- 
 >- [LifeCycle](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/LifeCycle/readme.md)
 
 
