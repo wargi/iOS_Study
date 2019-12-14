@@ -1,9 +1,9 @@
-# Text Field
+# Page Control
 
-## 1. 텍스트필드란?
-- 사용자의 키보드 입력을 처리해주는 UI
+## 1. PageControl 이란?
+- 페이지 컨트롤은 수평으로 페이징되는 UI에서 전체 페이지수와 현재페이지를 표시하는 UI
 
-## 2. 기능
+## 2. 구현
 ~~~swift
 @IBOutlet weak var inputField: UITextField!
 
@@ -32,9 +32,3 @@ btn.addTarget(self, action: #selector(showPredefinedValue), for: .touchUpInside)
 inputField.leftView = btn
 inputField.leftViewMode = .always
 ~~~
-
-## 3. Overlay View
-
-- 이해를 돕기 위해 사진을 첨부
-
-![pic](./image/pic1.png)

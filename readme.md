@@ -54,7 +54,7 @@
 >
 >- [UIButton](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/SystemView&Control/UIButton/readme.md)
 >- [UIPickerView](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/SystemView&Control/PickerView.md)
->- 
+>- [Page Control](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/SystemView&Control/PageControl.md)
 >
 >**3. Handling Image and Color**
 >

@@ -19,6 +19,8 @@ class TextPickerViewController: UIViewController {
    }
 }
 
+// PickerView는 스토리보드만으로만 설정 할 수 없다.
+// 델리게이트와 데이타소스를 연결 해주어야 한다.
 extension TextPickerViewController: UIPickerViewDataSource {
    // 컴포넌트 내부의 Row 개수 (필수구현)
    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
