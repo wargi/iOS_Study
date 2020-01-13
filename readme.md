@@ -86,34 +86,21 @@
 ## 3. Project
 
 >- [Method](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
->
->- [Calculator](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/Cal/Cal/ViewController.swift)
->
 >- [Number Baseball](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Study/BaseballGame/BaseballGame/ViewController.swift)
->
 >- [Calculator](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Practice/Calculator3/Calculator3/ViewController.swift)
->
 >- [Vending Machine](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Study/UIExam)
->
 >- [BlackJack](https://github.com/wargi/SangWookPark_IOS_School6/tree/master/Class/BlackJack)
->
 >- [To Beer]()
->
 >- [Sing Up](https://wargi.tistory.com/6)
->
 >- [MyMemo](https://github.com/wargi/Swift_Study/tree/master/MyMemo/MyMemo2)
->
 >- [WeatherToday 1](https://wargi.tistory.com/7)
->
 >- [WeatherToday 2](https://github.com/wargi/Swift_Study/tree/master/Mastering/Weather)
->
 >- [Box Office](https://wargi.tistory.com/8)
->
 >- [Over Eats](https://github.com/FastCampusTeamTwo/iOS)
->
 >- [어디주유 - 앱스토어 출시](https://github.com/OilPrice-Where/iOS-main)
+>- [My Memo - With RxSwift]()
 >
->  <br><br>
+> <br><br>
 
 ## 4. Contact Information
 
