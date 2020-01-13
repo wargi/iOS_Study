@@ -2,7 +2,7 @@
 //  MemoryStorage.swift
 //  RxMemo
 //
-//  Created by 박소정 on 2020/01/14.
+//  Created by 박상욱 on 2020/01/14.
 //  Copyright © 2020 sangwook park. All rights reserved.
 //
 
