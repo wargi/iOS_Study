@@ -28,6 +28,7 @@
 		8ECD9E0723CD6B3C00DB7FB6 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD9E0623CD6B3C00DB7FB6 /* Scene.swift */; };
 		8ECD9E0923CD6D7B00DB7FB6 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD9E0823CD6D7B00DB7FB6 /* SceneCoordinatorType.swift */; };
 		8ECD9E0B23CD6E1000DB7FB6 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD9E0A23CD6E1000DB7FB6 /* SceneCoordinator.swift */; };
+		8ECD9E0D23CF5AC300DB7FB6 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD9E0C23CF5AC300DB7FB6 /* CommonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		8ECD9E0623CD6B3C00DB7FB6 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		8ECD9E0823CD6D7B00DB7FB6 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		8ECD9E0A23CD6E1000DB7FB6 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		8ECD9E0C23CF5AC300DB7FB6 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				8E3CC60023CD3BF500990356 /* MemoListViewModel.swift */,
+				8ECD9E0C23CF5AC300DB7FB6 /* CommonViewModel.swift */,
 				8E3CC60223CD3C1D00990356 /* MemoDetailViewModel.swift */,
 				8E3CC60423CD3C4400990356 /* MemoComposeViewModel.swift */,
 			);
@@ -317,6 +320,7 @@
 				8ECD9E0923CD6D7B00DB7FB6 /* SceneCoordinatorType.swift in Sources */,
 				8E3CC60123CD3BF500990356 /* MemoListViewModel.swift in Sources */,
 				8E3CC60323CD3C1D00990356 /* MemoDetailViewModel.swift in Sources */,
+				8ECD9E0D23CF5AC300DB7FB6 /* CommonViewModel.swift in Sources */,
 				8ECD9E0523CD6AF200DB7FB6 /* TransitionModel.swift in Sources */,
 				8E3CC5FB23CD3B2400990356 /* MemoListViewController.swift in Sources */,
 				8E3CC5FF23CD3B8F00990356 /* MemoComposeViewController.swift in Sources */,
