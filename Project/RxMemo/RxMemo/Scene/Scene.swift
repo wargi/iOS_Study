@@ -21,7 +21,7 @@ extension Scene {
       
       switch self {
       case .list(let viewModel):
-         guard let nav = storyboard.instantiateViewController(withIdentifier: "ListNav") as? UINavigationController else {
+         guard let nav = storyboard.instantiateViewController(withIdentifier: "listNav") as? UINavigationController else {
             fatalError()
          }
          
@@ -30,7 +30,7 @@ extension Scene {
          }
          
          listVC.bind(viewModel: viewModel)
-         return listVC
+         return nav
       case .detail(let viewModel):
          guard var detailVC = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? MemoDetailViewController else {
             fatalError()
