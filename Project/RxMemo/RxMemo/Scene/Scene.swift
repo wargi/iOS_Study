@@ -44,6 +44,7 @@ extension Scene {
          }
          
          guard var composeVC = composeNav.viewControllers.first as? MemoComposeViewController else {
+            print("Error")
             fatalError()
          }
          

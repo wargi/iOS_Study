@@ -65,7 +65,7 @@
                         <viewLayoutGuide key="safeArea" id="HdF-3b-guz"/>
                     </view>
                     <navigationItem key="navigationItem" title="메모 목록" id="zWs-3U-FHw">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="XrB-RE-Cua"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XrB-RE-Cua"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -210,7 +210,7 @@
                 <navigationController storyboardIdentifier="listNav" automaticallyAdjustsScrollViewInsets="NO" id="sQV-my-cA1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Aub-HM-UZK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -228,7 +228,7 @@
                 <navigationController storyboardIdentifier="ComposeNav" automaticallyAdjustsScrollViewInsets="NO" id="fGb-K3-9ee" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="a2n-DG-AzY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
