@@ -109,9 +109,9 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="cancelButton" destination="zIK-5x-nTZ" id="Hpb-sU-1jr"/>
-                        <outlet property="contentTextView" destination="KDc-ya-xjJ" id="HAb-b4-Xoq"/>
-                        <outlet property="saveButton" destination="kqu-sU-Kvb" id="Wph-ah-wdh"/>
+                        <outlet property="cancelButton" destination="zIK-5x-nTZ" id="n4K-yA-bgK"/>
+                        <outlet property="contentTextView" destination="KDc-ya-xjJ" id="31y-QN-RNM"/>
+                        <outlet property="saveButton" destination="kqu-sU-Kvb" id="l7G-Qd-ULG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0t2-aI-bjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

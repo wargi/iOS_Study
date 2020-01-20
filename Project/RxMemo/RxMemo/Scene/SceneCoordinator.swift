@@ -54,7 +54,8 @@ class SceneCoordinator: SceneCoordinatorType {
          
          subject.onCompleted()
       case .modal:
-         print(target)
+         print("CurrentVC: ", currentVC)
+         print("Target: ", target)
          currentVC.present(target, animated: animate) {
             subject.onCompleted()
          }
