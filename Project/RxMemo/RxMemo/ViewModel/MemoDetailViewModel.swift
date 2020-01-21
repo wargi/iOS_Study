@@ -68,4 +68,22 @@ class MemoDetailViewModel: CommonViewModel {
          return self.sceneCoordinator.transition(to: composeScene, using: .modal, animate: true).asObservable().map { _ in }
       }
    }
+   
+   func shareAction(to: UIViewController?) -> CocoaAction {
+      return CocoaAction { [weak self] _ in
+         guard let memo = self?.memo.content else { return Observable.empty() }
+         let vc = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+         
+         to?.present(vc, animated: true, completion: nil)
+         
+         return Observable.empty()
+      }
+   }
+   
+   func makeDeleteAction() -> CocoaAction {
+      return Action { input in
+         self.storage.delete(memo: self.memo)
+         return self.sceneCoordinator.close(animate: true).asObservable().map { _ in }
+      }
+   }
 }
