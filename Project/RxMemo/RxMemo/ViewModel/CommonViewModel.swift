@@ -21,3 +21,4 @@ class CommonViewModel: NSObject {
       self.storage = storage
    }
 }
+
