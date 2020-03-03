@@ -29,6 +29,7 @@
 		8ECD9E0923CD6D7B00DB7FB6 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD9E0823CD6D7B00DB7FB6 /* SceneCoordinatorType.swift */; };
 		8ECD9E0B23CD6E1000DB7FB6 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD9E0A23CD6E1000DB7FB6 /* SceneCoordinator.swift */; };
 		8ECD9E0D23CF5AC300DB7FB6 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD9E0C23CF5AC300DB7FB6 /* CommonViewModel.swift */; };
+		8EE2C9C5240A314A006C502F /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C9C4240A314A006C502F /* CoreDataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		8ECD9E0823CD6D7B00DB7FB6 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		8ECD9E0A23CD6E1000DB7FB6 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		8ECD9E0C23CF5AC300DB7FB6 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		8EE2C9C4240A314A006C502F /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				8E484FF723CD317D0085B553 /* RxMemo.xcdatamodeld */,
+				8EE2C9C4240A314A006C502F /* CoreDataStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3CC5F923CD368800990356 /* MemoryStorage.swift in Sources */,
+				8EE2C9C5240A314A006C502F /* CoreDataStorage.swift in Sources */,
 				8E3CC60523CD3C4400990356 /* MemoComposeViewModel.swift in Sources */,
 				8ECD9E0723CD6B3C00DB7FB6 /* Scene.swift in Sources */,
 				8E3CC5FD23CD3B6B00990356 /* MemoDetailViewController.swift in Sources */,

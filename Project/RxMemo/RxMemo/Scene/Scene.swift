@@ -40,6 +40,7 @@ extension Scene {
          return detailVC
       case .compose(let viewModel):
          guard let composeNav = storyboard.instantiateViewController(withIdentifier: "ComposeNav") as? UINavigationController else {
+            print("WOW")
             fatalError()
          }
          
@@ -49,7 +50,7 @@ extension Scene {
          }
          
          composeVC.bind(viewModel: viewModel)
-         return composeVC
+         return composeNav
       }
    }
 }

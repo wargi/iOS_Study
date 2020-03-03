@@ -40,16 +40,4 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
          .bind(to: viewModel.saveAction.inputs)
          .disposed(by: rx.disposeBag)
    }
-   
-   override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
-//      contentTextView.becomeFirstResponder()
-   }
-   
-   override func viewWillDisappear(_ animated: Bool) {
-      super.viewWillDisappear(animated)
-//      if contentTextView.isFirstResponder {
-//         contentTextView.resignFirstResponder()
-//      }
-   }
 }

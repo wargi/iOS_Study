@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="119"/>
+            <point key="canvasLocation" x="4" y="757"/>
         </scene>
         <!--메모 목록-->
         <scene sceneID="2Qr-ee-2yE">
@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="1721.7391304347827" y="756.69642857142856"/>
         </scene>
-        <!--새 메모-->
+        <!--Title-->
         <scene sceneID="KMS-XA-Vdy">
             <objects>
                 <viewController id="WZw-G7-hfK" customClass="MemoComposeViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,15 +103,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ba5-qK-yw0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="8R6-jb-ddD">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zIK-5x-nTZ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="kqu-sU-Kvb"/>
+                    <navigationItem key="navigationItem" title="Title" id="9uk-c4-74d">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="jhE-dh-bes"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="OJl-2j-J1L"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="cancelButton" destination="zIK-5x-nTZ" id="n4K-yA-bgK"/>
-                        <outlet property="contentTextView" destination="KDc-ya-xjJ" id="31y-QN-RNM"/>
-                        <outlet property="saveButton" destination="kqu-sU-Kvb" id="l7G-Qd-ULG"/>
+                        <outlet property="cancelButton" destination="jhE-dh-bes" id="Fqd-46-AT0"/>
+                        <outlet property="contentTextView" destination="KDc-ya-xjJ" id="u45-wl-GrF"/>
+                        <outlet property="saveButton" destination="OJl-2j-J1L" id="SGu-gG-BNL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0t2-aI-bjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

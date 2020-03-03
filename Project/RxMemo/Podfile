@@ -12,6 +12,7 @@ target 'RxMemo' do
   pod 'RxSwiftExt'
   pod 'Action'
   pod 'RxDataSources'
+  pod 'RxCoreData'
   pod "RxGesture"
   pod 'RxReachability'
   pod 'RxKeyboard'
