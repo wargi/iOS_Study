@@ -2,8 +2,16 @@
 //  LoginViewController.swift
 //  UberTutorial
 //
-//  Created by 박소정 on 2020/02/11.
+//  Created by 박상욱 on 2020/02/11.
 //  Copyright © 2020 sangwook park. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class LoginViewController: UIViewController {
+   override func viewDidLoad() {
+      super.viewDidLoad()
+      print("Hi")
+      view.backgroundColor = .red
+   }
+}
