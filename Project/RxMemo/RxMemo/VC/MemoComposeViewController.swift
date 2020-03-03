@@ -50,7 +50,7 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
       
       keyboardObservable
          .toContentInset(of: contentTextView)
-         .bind(to: contentTextView.rx.cotentInset)
+         .bind(to: contentTextView.rx.cotentInset, contentTextView.rx.scrollContentInset)
          .disposed(by: rx.disposeBag)
    }
 }
@@ -69,6 +69,14 @@ extension Reactive where Base: UITextView {
    var cotentInset: Binder<UIEdgeInsets> {
       return Binder(self.base) { textView, inset in
          textView.contentInset = inset
+      }
+   }
+}
+
+extension Reactive where Base: UIScrollView {
+   var scrollContentInset: Binder<UIEdgeInsets> {
+      return Binder(self.base) { scrollView, inset in
+         scrollView.contentInset = inset
       }
    }
 }
