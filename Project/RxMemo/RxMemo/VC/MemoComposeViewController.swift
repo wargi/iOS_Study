@@ -49,20 +49,26 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
       let keyboardObservable = Observable.merge(willShowOberservable, willHideObservable).share()
       
       keyboardObservable
-         .subscribe(onNext: { [weak self] height in
-            guard let strongSelf = self else { return }
-            
-            var inset = strongSelf.contentTextView.contentInset
-            inset.bottom = height
-            
-            var scrollInset = strongSelf.contentTextView.scrollIndicatorInsets
-            scrollInset.bottom = height
-            
-            UIView.animate(withDuration: 0.3) {
-               strongSelf.contentTextView.contentInset = inset
-               strongSelf.contentTextView.scrollIndicatorInsets = scrollInset
-            }
-         })
+         .toContentInset(of: contentTextView)
+         .bind(to: contentTextView.rx.cotentInset)
          .disposed(by: rx.disposeBag)
+   }
+}
+
+extension ObservableType where Element == CGFloat {
+   func toContentInset(of textView: UITextView) -> Observable<UIEdgeInsets> {
+      return map { height in
+         var inset = textView.contentInset
+         inset.bottom = height
+         return inset
+      }
+   }
+}
+
+extension Reactive where Base: UITextView {
+   var cotentInset: Binder<UIEdgeInsets> {
+      return Binder(self.base) { textView, inset in
+         textView.contentInset = inset
+      }
    }
 }
