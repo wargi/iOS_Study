@@ -104,7 +104,7 @@
 
 ## 4. Memo
 
->- [메모장 - 스위프트 공부중에 짜잘한 내용들 작성](https://github.com/wargi/iOS_Study/tree/master/Memo/README.md)
+>- [메모장 - 스위프트 공부중에 짜잘한 내용들 작성](https://github.com/wargi/iOS_Study/blob/master/Memo/readme.md)
 > <br><br>
 
 ## 5. Contact Information

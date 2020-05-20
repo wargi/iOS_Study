@@ -2,5 +2,5 @@
 
 ### - List
 
-##### 1. [Short-circuit Evaluation, Side Effect]()
+##### 1. [Short-circuit Evaluation, Side Effect](https://github.com/wargi/iOS_Study/blob/master/Memo/Operator/R1.md)
 
