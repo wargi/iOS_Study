@@ -104,7 +104,8 @@
 
 ## 4. Memo
 
->- [메모장 - 스위프트 공부중에 짜잘한 내용들 작성]()
+>- [Short-circuit Evaluation, Side Effect](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Method/readme.md)
+>-[]
 > <br><br>
 
 ## 5. Contact Information
