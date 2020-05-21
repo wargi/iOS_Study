@@ -4,3 +4,5 @@
 
 ##### 1. [Short-circuit Evaluation, Side Effect](https://github.com/wargi/iOS_Study/blob/master/Memo/Operator/R1.md)
 
+##### 2. [Timer & Runloop](https://github.com/wargi/iOS_Study/blob/master/Memo/Concurrency/R1.md)
+
