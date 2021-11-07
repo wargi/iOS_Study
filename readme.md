@@ -26,10 +26,8 @@
 
 >- [Git](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/GIT/readme.md)
 >
->- [Object-Oriented](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/ObjectOriented%20Programming/readme.md)
-
-- **[Swift]**
-
+>-  [Object-Oriented](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/ObjectOriented%20Programming/readme.md)
+>
 >- [Variable / Method](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/VariableAndMethod/readme.md)
 >- [Conditional](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Conditional/readme.md)
 >- [Loop](https://github.com/wargi/SangWookPark_IOS_School6/blob/master/Class/Loop/readme.md)
