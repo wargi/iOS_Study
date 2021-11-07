@@ -16,7 +16,7 @@
 
 >- FastCampus IOS개발 스쿨 수료 (2018.04.)
 >- 컴퓨터공학과 졸업 (2019.08.)
->- Naver Connect - Boost Cource [iOS] (2019.10.)
+>- Naver Connect - iOS Boost Cource (2019.10.)
 
 <br>
 
